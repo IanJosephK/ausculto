@@ -1,0 +1,150 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Dark is the default and primary mode */
+  --c-page: #1c1c1e;
+  --c-surface: #2c2c2e;
+  --c-surface-2: #3a3a3c;
+  --c-ink: #f5f0e8;
+  --c-muted: #8e8e93;
+  --c-edge: rgba(245, 240, 232, 0.09);
+  color-scheme: dark;
+}
+
+.light {
+  --c-page: #ede6d9;
+  --c-surface: #f5f0e8;
+  --c-surface-2: #fbf8f2;
+  --c-ink: #2c2c2e;
+  --c-muted: #6e6e73;
+  --c-edge: rgba(28, 28, 30, 0.12);
+  color-scheme: light;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  @apply bg-page text-ink font-ui antialiased;
+  min-height: 100%;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+::selection {
+  background: rgba(184, 150, 62, 0.35);
+}
+
+/* Reading prose */
+.reading-text {
+  @apply font-body text-ink;
+  font-size: 1.0625rem;
+  line-height: 1.7;
+}
+.reading-text p {
+  margin-bottom: 1.25em;
+}
+@media (min-width: 768px) {
+  .reading-text {
+    font-size: 1.125rem;
+  }
+}
+
+/* Highlight marks in chapter text */
+.hl {
+  background: rgba(184, 150, 62, 0.22);
+  border-bottom: 1.5px solid #b8963e;
+  border-radius: 2px;
+  padding: 0 1px;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+.hl:hover {
+  background: rgba(184, 150, 62, 0.38);
+}
+
+/* The word currently being spoken */
+.active-word {
+  background: #b8963e;
+  color: #1c1c1e;
+  border-radius: 3px;
+  padding: 0 2px;
+  margin: 0 -2px;
+}
+
+/* Search-result flash when jumping to a passage */
+.flash-target {
+  animation: flashBg 2s ease-out;
+}
+@keyframes flashBg {
+  0%,
+  40% {
+    background-color: rgba(184, 150, 62, 0.25);
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+/* Thin, unobtrusive scrollbars */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--c-surface-2) transparent;
+}
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+*::-webkit-scrollbar-thumb {
+  background: var(--c-surface-2);
+  border-radius: 4px;
+}
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Range input (audio scrubber) */
+input[type='range'].scrubber {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background: linear-gradient(
+    to right,
+    #b8963e 0%,
+    #b8963e var(--scrub-pct, 0%),
+    var(--c-surface-2) var(--scrub-pct, 0%),
+    var(--c-surface-2) 100%
+  );
+  outline-offset: 4px;
+  cursor: pointer;
+}
+input[type='range'].scrubber::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #d4b25c;
+  border: none;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+  transition: transform 0.15s ease;
+}
+input[type='range'].scrubber:hover::-webkit-slider-thumb {
+  transform: scale(1.25);
+}
+input[type='range'].scrubber::-moz-range-thumb {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #d4b25c;
+  border: none;
+}
+
+/* Supabase Auth UI fine-tuning */
+.auth-container .supabase-auth-ui_ui-anchor {
+  color: #b8963e;
+}

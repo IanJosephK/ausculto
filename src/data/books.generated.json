@@ -1,0 +1,2746 @@
+[
+  {
+    "slug": "pride-and-prejudice",
+    "title": "Pride and Prejudice",
+    "author": "Jane Austen",
+    "year": 1813,
+    "genre": "Fiction",
+    "description": "Elizabeth Bennet spars with the proud Mr. Darcy in Regency England, where wit is a weapon and marriage a market. Austen’s most beloved novel is a sharp, funny study of first impressions and second chances.",
+    "coverUrl": "https://covers.openlibrary.org/b/id/14348537-L.jpg",
+    "gutenbergId": 1342,
+    "librivoxId": 253,
+    "librivoxUrl": "https://librivox.org/pride-and-prejudice-by-jane-austen/",
+    "totalDuration": 47203,
+    "textMapping": "proportional",
+    "chapters": [
+      {
+        "title": "Chapters 1-3",
+        "audioUrl": "https://www.archive.org/download/pride_and_prejudice_librivox/prideandprejudice_01-03_austen_64kb.mp3",
+        "duration": 1132
+      },
+      {
+        "title": "Chapters 4-5",
+        "audioUrl": "https://www.archive.org/download/pride_and_prejudice_librivox/prideandprejudice_04-05_austen_64kb.mp3",
+        "duration": 865
+      },
+      {
+        "title": "Chapter 6",
+        "audioUrl": "https://www.archive.org/download/pride_and_prejudice_librivox/prideandprejudice_06_austen_64kb.mp3",
+        "duration": 777
+      },
+      {
+        "title": "Chapter 7",
+        "audioUrl": "https://www.archive.org/download/pride_and_prejudice_librivox/prideandprejudice_07_austen_64kb.mp3",
+        "duration": 638
+      },
+      {
+        "title": "Chapter 8",
+        "audioUrl": "https://www.archive.org/download/pride_and_prejudice_librivox/prideandprejudice_08_austen_64kb.mp3",
+        "duration": 819
+      },
+      {
+        "title": "Chapter 9",
+        "audioUrl": "https://www.archive.org/download/pride_and_prejudice_librivox/prideandprejudice_09_austen_64kb.mp3",
+        "duration": 701
+      },
+      {
+        "title": "Chapters 10-11",
+        "audioUrl": "https://www.archive.org/download/pride_and_prejudice_librivox/prideandprejudice_10-11_austen_64kb.mp3",
+        "duration": 1563
+      },
+      {
+        "title": "Chapters 12-13",
+        "audioUrl": "https://www.archive.org/download/pride_and_prejudice_librivox/prideandprejudice_12-13_austen_64kb.mp3",
+        "duration": 901
+      },
+      {
+        "title": "Chapters 14-15",
+        "audioUrl": "https://www.archive.org/download/pride_and_prejudice_librivox/prideandprejudice_14-15_austen_64kb.mp3",
+        "duration": 997
+      },
+      {
+        "title": "Chapters 16-17",
+        "audioUrl": "https://www.archive.org/download/pride_and_prejudice_librivox/prideandprejudice_16-17_austen_64kb.mp3",
+        "duration": 1830
+      },
+      {
+        "title": "Chapters 18-19",
+        "audioUrl": "https://www.archive.org/download/pride_and_prejudice_librivox/prideandprejudice_18-19_austen_64kb.mp3",
+        "duration": 2853
+      },
+      {
+        "title": "Chapter 20",
+        "audioUrl": "https://www.archive.org/download/pride_and_prejudice_librivox/prideandprejudice_20_austen_64kb.mp3",
+        "duration": 750
+      },
+      {
+        "title": "Chapters 21-22",
+        "audioUrl": "https://www.archive.org/download/pride_and_prejudice_librivox/prideandprejudice_21-22_austen_64kb.mp3",
+        "duration": 1643
+      },
+      {
+        "title": "Chapters 23-25",
+        "audioUrl": "https://www.archive.org/download/pride_and_prejudice_librivox/prideandprejudice_23-25_austen_64kb.mp3",
+        "duration": 2269
+      },
+      {
+        "title": "Chapter 26",
+        "audioUrl": "https://www.archive.org/download/pride_and_prejudice_librivox/prideandprejudice_26_austen_64kb.mp3",
+        "duration": 740
+      },
+      {
+        "title": "Chapter 27",
+        "audioUrl": "https://www.archive.org/download/pride_and_prejudice_librivox/prideandprejudice_27_austen_64kb.mp3",
+        "duration": 419
+      },
+      {
+        "title": "Chapters 28-29",
+        "audioUrl": "https://www.archive.org/download/pride_and_prejudice_librivox/prideandprejudice_28-29_austen_64kb.mp3",
+        "duration": 1590
+      },
+      {
+        "title": "Chapter 30",
+        "audioUrl": "https://www.archive.org/download/pride_and_prejudice_librivox/prideandprejudice_30_austen_64kb.mp3",
+        "duration": 402
+      },
+      {
+        "title": "Chapter 31",
+        "audioUrl": "https://www.archive.org/download/pride_and_prejudice_librivox/prideandprejudice_31_austen_64kb.mp3",
+        "duration": 526
+      },
+      {
+        "title": "Chapters 32-33",
+        "audioUrl": "https://www.archive.org/download/pride_and_prejudice_librivox/prideandprejudice_32-33_austen_64kb.mp3",
+        "duration": 1140
+      },
+      {
+        "title": "Chapters 34-35",
+        "audioUrl": "https://www.archive.org/download/pride_and_prejudice_librivox/prideandprejudice_34-35_austen_64kb.mp3",
+        "duration": 2158
+      },
+      {
+        "title": "Chapters 36-37",
+        "audioUrl": "https://www.archive.org/download/pride_and_prejudice_librivox/prideandprejudice_36-37_austen_64kb.mp3",
+        "duration": 1414
+      },
+      {
+        "title": "Chapters 38-39",
+        "audioUrl": "https://www.archive.org/download/pride_and_prejudice_librivox/prideandprejudice_38-39_austen_64kb.mp3",
+        "duration": 1030
+      },
+      {
+        "title": "Chapters 40-41",
+        "audioUrl": "https://www.archive.org/download/pride_and_prejudice_librivox/prideandprejudice_40-41_austen_64kb.mp3",
+        "duration": 1677
+      },
+      {
+        "title": "Chapters 42-43",
+        "audioUrl": "https://www.archive.org/download/pride_and_prejudice_librivox/prideandprejudice_42-43_austen_64kb.mp3",
+        "duration": 2624
+      },
+      {
+        "title": "Chapters 44-45",
+        "audioUrl": "https://www.archive.org/download/pride_and_prejudice_librivox/prideandprejudice_44-45_austen_64kb.mp3",
+        "duration": 1470
+      },
+      {
+        "title": "Chapter 46",
+        "audioUrl": "https://www.archive.org/download/pride_and_prejudice_librivox/prideandprejudice_46_austen_64kb.mp3",
+        "duration": 1191
+      },
+      {
+        "title": "Chapters 47-48",
+        "audioUrl": "https://www.archive.org/download/pride_and_prejudice_librivox/prideandprejudice_47-48_austen_64kb.mp3",
+        "duration": 2320
+      },
+      {
+        "title": "Chapter 49",
+        "audioUrl": "https://www.archive.org/download/pride_and_prejudice_librivox/prideandprejudice_49_austen_64kb.mp3",
+        "duration": 935
+      },
+      {
+        "title": "Chapters 50-51",
+        "audioUrl": "https://www.archive.org/download/pride_and_prejudice_librivox/prideandprejudice_50-51_austen_64kb.mp3",
+        "duration": 1379
+      },
+      {
+        "title": "Chapters 52-53",
+        "audioUrl": "https://www.archive.org/download/pride_and_prejudice_librivox/prideandprejudice_52-53f_austen_64kb.mp3",
+        "duration": 2287
+      },
+      {
+        "title": "Chapter 54",
+        "audioUrl": "https://www.archive.org/download/pride_and_prejudice_librivox/prideandprejudice_54_austen_64kb.mp3",
+        "duration": 632
+      },
+      {
+        "title": "Chapter 55",
+        "audioUrl": "https://www.archive.org/download/pride_and_prejudice_librivox/prideandprejudice_55_austen_64kb.mp3",
+        "duration": 956
+      },
+      {
+        "title": "Chapters 56-57",
+        "audioUrl": "https://www.archive.org/download/pride_and_prejudice_librivox/prideandprejudice_56-57_austen_64kb.mp3",
+        "duration": 1714
+      },
+      {
+        "title": "Chapter 58",
+        "audioUrl": "https://www.archive.org/download/pride_and_prejudice_librivox/prideandprejudice_58_austen_64kb.mp3",
+        "duration": 908
+      },
+      {
+        "title": "Chapter 59",
+        "audioUrl": "https://www.archive.org/download/pride_and_prejudice_librivox/prideandprejudice_59_austen_64kb.mp3",
+        "duration": 919
+      },
+      {
+        "title": "Chapters 60-61",
+        "audioUrl": "https://www.archive.org/download/pride_and_prejudice_librivox/prideandprejudice_60-61_austen_64kb.mp3",
+        "duration": 1034
+      }
+    ]
+  },
+  {
+    "slug": "jane-eyre",
+    "title": "Jane Eyre",
+    "author": "Charlotte Brontë",
+    "year": 1847,
+    "genre": "Fiction",
+    "description": "An orphaned governess with a fierce sense of self falls for her brooding employer, Mr. Rochester — whose house holds a terrible secret. A gothic romance and a quietly radical portrait of a woman insisting on her own worth.",
+    "coverUrl": "https://covers.openlibrary.org/b/id/8235363-L.jpg",
+    "gutenbergId": 1260,
+    "librivoxId": 133,
+    "librivoxUrl": "https://librivox.org/jane-eyre-by-charlotte-bront/",
+    "totalDuration": 74196,
+    "textMapping": "exact",
+    "chapters": [
+      {
+        "title": "Chapter 00",
+        "audioUrl": "https://www.archive.org/download/jane_eyre_librivox/jane_eyre_00_bronte_64kb.mp3",
+        "duration": 357
+      },
+      {
+        "title": "Chapter 01",
+        "audioUrl": "https://www.archive.org/download/jane_eyre_librivox/jane_eyre_01_bronte_64kb.mp3",
+        "duration": 760
+      },
+      {
+        "title": "Chapter 02",
+        "audioUrl": "https://www.archive.org/download/jane_eyre_librivox/jane_eyre_02_bronte_64kb.mp3",
+        "duration": 1079
+      },
+      {
+        "title": "Chapter 03",
+        "audioUrl": "https://www.archive.org/download/jane_eyre_librivox/jane_eyre_03_bronte_64kb.mp3",
+        "duration": 1278
+      },
+      {
+        "title": "Chapter 04",
+        "audioUrl": "https://www.archive.org/download/jane_eyre_librivox/jane_eyre_04_bronte_64kb.mp3",
+        "duration": 1940
+      },
+      {
+        "title": "Chapter 05",
+        "audioUrl": "https://www.archive.org/download/jane_eyre_librivox/jane_eyre_05_bronte_64kb.mp3",
+        "duration": 1867
+      },
+      {
+        "title": "Chapter 06",
+        "audioUrl": "https://www.archive.org/download/jane_eyre_librivox/jane_eyre_06_bronte_64kb.mp3",
+        "duration": 1195
+      },
+      {
+        "title": "Chapter 07",
+        "audioUrl": "https://www.archive.org/download/jane_eyre_librivox/jane_eyre_07_bronte_64kb.mp3",
+        "duration": 1331
+      },
+      {
+        "title": "Chapter 08",
+        "audioUrl": "https://www.archive.org/download/jane_eyre_librivox/jane_eyre_08_bronte_64kb.mp3",
+        "duration": 1342
+      },
+      {
+        "title": "Chapter 09",
+        "audioUrl": "https://www.archive.org/download/jane_eyre_librivox/jane_eyre_09_bronte_64kb.mp3",
+        "duration": 1430
+      },
+      {
+        "title": "Chapter 10",
+        "audioUrl": "https://www.archive.org/download/jane_eyre_librivox/jane_eyre_10_bronte_64kb.mp3",
+        "duration": 1791
+      },
+      {
+        "title": "Chapter 11",
+        "audioUrl": "https://www.archive.org/download/jane_eyre_librivox/jane_eyre_11_bronte_64kb.mp3",
+        "duration": 2441
+      },
+      {
+        "title": "Chapter 12",
+        "audioUrl": "https://www.archive.org/download/jane_eyre_librivox/jane_eyre_12_bronte_64kb.mp3",
+        "duration": 1705
+      },
+      {
+        "title": "Chapter 13",
+        "audioUrl": "https://www.archive.org/download/jane_eyre_librivox/jane_eyre_13_bronte_64kb.mp3",
+        "duration": 1590
+      },
+      {
+        "title": "Chapter 14",
+        "audioUrl": "https://www.archive.org/download/jane_eyre_librivox/jane_eyre_14_bronte_64kb.mp3",
+        "duration": 1960
+      },
+      {
+        "title": "Chapter 15",
+        "audioUrl": "https://www.archive.org/download/jane_eyre_librivox/jane_eyre_15_bronte_64kb.mp3",
+        "duration": 2045
+      },
+      {
+        "title": "Chapter 16",
+        "audioUrl": "https://www.archive.org/download/jane_eyre_librivox/jane_eyre_16_bronte_64kb.mp3",
+        "duration": 1261
+      },
+      {
+        "title": "Chapter 17",
+        "audioUrl": "https://www.archive.org/download/jane_eyre_librivox/jane_eyre_17_bronte_64kb.mp3",
+        "duration": 2822
+      },
+      {
+        "title": "Chapter 18",
+        "audioUrl": "https://www.archive.org/download/jane_eyre_librivox/jane_eyre_18_bronte_64kb.mp3",
+        "duration": 2102
+      },
+      {
+        "title": "Chapter 19",
+        "audioUrl": "https://www.archive.org/download/jane_eyre_librivox/jane_eyre_19_bronte_64kb.mp3",
+        "duration": 1612
+      },
+      {
+        "title": "Chapter 20",
+        "audioUrl": "https://www.archive.org/download/jane_eyre_librivox/jane_eyre_20_bronte_64kb.mp3",
+        "duration": 2369
+      },
+      {
+        "title": "Chapter 21",
+        "audioUrl": "https://www.archive.org/download/jane_eyre_librivox/jane_eyre_21_bronte_64kb.mp3",
+        "duration": 3236
+      },
+      {
+        "title": "Chapter 22",
+        "audioUrl": "https://www.archive.org/download/jane_eyre_librivox/jane_eyre_22_bronte_64kb.mp3",
+        "duration": 1513
+      },
+      {
+        "title": "Chapter 23",
+        "audioUrl": "https://www.archive.org/download/jane_eyre_librivox/jane_eyre_23_bronte_64kb.mp3",
+        "duration": 2064
+      },
+      {
+        "title": "Chapter 24",
+        "audioUrl": "https://www.archive.org/download/jane_eyre_librivox/jane_eyre_24_bronte_64kb.mp3",
+        "duration": 2425
+      },
+      {
+        "title": "Chapter 25",
+        "audioUrl": "https://www.archive.org/download/jane_eyre_librivox/jane_eyre_25_bronte_64kb.mp3",
+        "duration": 2061
+      },
+      {
+        "title": "Chapter 26",
+        "audioUrl": "https://www.archive.org/download/jane_eyre_librivox/jane_eyre_26_bronte_64kb.mp3",
+        "duration": 1888
+      },
+      {
+        "title": "Chapter 27",
+        "audioUrl": "https://www.archive.org/download/jane_eyre_librivox/jane_eyre_27_bronte_64kb.mp3",
+        "duration": 5126
+      },
+      {
+        "title": "Chapter 28",
+        "audioUrl": "https://www.archive.org/download/jane_eyre_librivox/jane_eyre_28_bronte_64kb.mp3",
+        "duration": 3029
+      },
+      {
+        "title": "Chapter 29",
+        "audioUrl": "https://www.archive.org/download/jane_eyre_librivox/jane_eyre_29_bronte_64kb.mp3",
+        "duration": 1710
+      },
+      {
+        "title": "Chapter 30",
+        "audioUrl": "https://www.archive.org/download/jane_eyre_librivox/jane_eyre_30_bronte_64kb.mp3",
+        "duration": 1444
+      },
+      {
+        "title": "Chapter 31",
+        "audioUrl": "https://www.archive.org/download/jane_eyre_librivox/jane_eyre_31_bronte_64kb.mp3",
+        "duration": 1199
+      },
+      {
+        "title": "Chapter 32",
+        "audioUrl": "https://www.archive.org/download/jane_eyre_librivox/jane_eyre_32_bronte_64kb.mp3",
+        "duration": 1727
+      },
+      {
+        "title": "Chapter 33",
+        "audioUrl": "https://www.archive.org/download/jane_eyre_librivox/jane_eyre_33_bronte_64kb.mp3",
+        "duration": 2282
+      },
+      {
+        "title": "Chapter 34",
+        "audioUrl": "https://www.archive.org/download/jane_eyre_librivox/jane_eyre_34_bronte_64kb.mp3",
+        "duration": 3502
+      },
+      {
+        "title": "Chapter 35",
+        "audioUrl": "https://www.archive.org/download/jane_eyre_librivox/jane_eyre_35_bronte_64kb.mp3",
+        "duration": 1698
+      },
+      {
+        "title": "Chapter 36",
+        "audioUrl": "https://www.archive.org/download/jane_eyre_librivox/jane_eyre_36_bronte_64kb.mp3",
+        "duration": 1453
+      },
+      {
+        "title": "Chapter 37",
+        "audioUrl": "https://www.archive.org/download/jane_eyre_librivox/jane_eyre_37_bronte_64kb.mp3",
+        "duration": 2879
+      },
+      {
+        "title": "Chapter 38",
+        "audioUrl": "https://www.archive.org/download/jane_eyre_librivox/jane_eyre_38_bronte_64kb.mp3",
+        "duration": 683
+      }
+    ]
+  },
+  {
+    "slug": "the-great-gatsby",
+    "title": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "year": 1925,
+    "genre": "Fiction",
+    "description": "Across the bay from Daisy Buchanan’s green light, the mysterious Jay Gatsby throws glittering parties for a dream that has already slipped away. Fitzgerald’s jazz-age tragedy of longing and reinvention.",
+    "coverUrl": "https://covers.openlibrary.org/b/id/10590366-L.jpg",
+    "gutenbergId": 64317,
+    "librivoxId": 16113,
+    "librivoxUrl": "https://librivox.org/the-great-gatsby-by-f-scott-fitzgerald/",
+    "totalDuration": 20283,
+    "textMapping": "exact",
+    "chapters": [
+      {
+        "title": "Chapter 1",
+        "audioUrl": "https://www.archive.org/download/greatgatsby_2101_librivox/greatgatsby_01_fitzgerald_64kb.mp3",
+        "duration": 2583
+      },
+      {
+        "title": "Chapter 2",
+        "audioUrl": "https://www.archive.org/download/greatgatsby_2101_librivox/greatgatsby_02_fitzgerald_64kb.mp3",
+        "duration": 1780
+      },
+      {
+        "title": "Chapter 3",
+        "audioUrl": "https://www.archive.org/download/greatgatsby_2101_librivox/greatgatsby_03_fitzgerald_64kb.mp3",
+        "duration": 2379
+      },
+      {
+        "title": "Chapter 4",
+        "audioUrl": "https://www.archive.org/download/greatgatsby_2101_librivox/greatgatsby_04_fitzgerald_64kb.mp3",
+        "duration": 2238
+      },
+      {
+        "title": "Chapter 5",
+        "audioUrl": "https://www.archive.org/download/greatgatsby_2101_librivox/greatgatsby_05_fitzgerald_64kb.mp3",
+        "duration": 1801
+      },
+      {
+        "title": "Chapter  6",
+        "audioUrl": "https://www.archive.org/download/greatgatsby_2101_librivox/greatgatsby_06_fitzgerald_64kb.mp3",
+        "duration": 1752
+      },
+      {
+        "title": "Chapter 7",
+        "audioUrl": "https://www.archive.org/download/greatgatsby_2101_librivox/greatgatsby_07_fitzgerald_64kb.mp3",
+        "duration": 3776
+      },
+      {
+        "title": "Chapter 8",
+        "audioUrl": "https://www.archive.org/download/greatgatsby_2101_librivox/greatgatsby_08_fitzgerald_64kb.mp3",
+        "duration": 1857
+      },
+      {
+        "title": "Chapter 9",
+        "audioUrl": "https://www.archive.org/download/greatgatsby_2101_librivox/greatgatsby_09_fitzgerald_64kb.mp3",
+        "duration": 2117
+      }
+    ]
+  },
+  {
+    "slug": "a-tale-of-two-cities",
+    "title": "A Tale of Two Cities",
+    "author": "Charles Dickens",
+    "year": 1859,
+    "genre": "Fiction",
+    "description": "London and Paris, the best of times and the worst, as the French Revolution gathers to a storm. Dickens’ tale of sacrifice and resurrection builds to one of the most famous endings in literature.",
+    "coverUrl": "https://covers.openlibrary.org/b/id/13301713-L.jpg",
+    "gutenbergId": 98,
+    "librivoxId": 510,
+    "librivoxUrl": "https://librivox.org/a-tale-of-two-cities-by-charles-dickens/",
+    "totalDuration": 53975,
+    "textMapping": "proportional",
+    "chapters": [
+      {
+        "title": "I.I: The Period",
+        "audioUrl": "https://www.archive.org/download/tale_two_cities_librivox/tale_of_two_cities_01_dickens_64kb.mp3",
+        "duration": 409
+      },
+      {
+        "title": "I.II: The Mail",
+        "audioUrl": "https://www.archive.org/download/tale_two_cities_librivox/tale_of_two_cities_02_dickens_64kb.mp3",
+        "duration": 893
+      },
+      {
+        "title": "I.III: The Night Shadows",
+        "audioUrl": "https://www.archive.org/download/tale_two_cities_librivox/tale_of_two_cities_03_dickens_64kb.mp3",
+        "duration": 727
+      },
+      {
+        "title": "I.IV: The Preparation",
+        "audioUrl": "https://www.archive.org/download/tale_two_cities_librivox/tale_of_two_cities_04_dickens_64kb.mp3",
+        "duration": 1797
+      },
+      {
+        "title": "I.V: The Wineshop",
+        "audioUrl": "https://www.archive.org/download/tale_two_cities_librivox/tale_of_two_cities_05_dickens_64kb.mp3",
+        "duration": 1583
+      },
+      {
+        "title": "I.VI: The Shoemaker",
+        "audioUrl": "https://www.archive.org/download/tale_two_cities_librivox/tale_of_two_cities_06_dickens_64kb.mp3",
+        "duration": 1422
+      },
+      {
+        "title": "II.I: Five Years Later",
+        "audioUrl": "https://www.archive.org/download/tale_two_cities_librivox/tale_of_two_cities_07_dickens_64kb.mp3",
+        "duration": 859
+      },
+      {
+        "title": "II.II: A Sight",
+        "audioUrl": "https://www.archive.org/download/tale_two_cities_librivox/tale_of_two_cities_08_dickens_64kb.mp3",
+        "duration": 1075
+      },
+      {
+        "title": "II.III: A Disappointment",
+        "audioUrl": "https://www.archive.org/download/tale_two_cities_librivox/tale_of_two_cities_09_dickens_64kb.mp3",
+        "duration": 2174
+      },
+      {
+        "title": "II.IV: Congratulatory",
+        "audioUrl": "https://www.archive.org/download/tale_two_cities_librivox/tale_of_two_cities_10_dickens_64kb.mp3",
+        "duration": 1053
+      },
+      {
+        "title": "II.V: The Jackal",
+        "audioUrl": "https://www.archive.org/download/tale_two_cities_librivox/tale_of_two_cities_11_dickens_64kb.mp3",
+        "duration": 870
+      },
+      {
+        "title": "II.VI: Hundreds of People",
+        "audioUrl": "https://www.archive.org/download/tale_two_cities_librivox/tale_of_two_cities_12_dickens_64kb.mp3",
+        "duration": 1580
+      },
+      {
+        "title": "II.VII: Monseigneur in Town",
+        "audioUrl": "https://www.archive.org/download/tale_two_cities_librivox/tale_of_two_cities_13_dickens_64kb.mp3",
+        "duration": 1360
+      },
+      {
+        "title": "II.VIII: Monseigneur in the Country",
+        "audioUrl": "https://www.archive.org/download/tale_two_cities_librivox/tale_of_two_cities_14_dickens_64kb.mp3",
+        "duration": 817
+      },
+      {
+        "title": "II.IX: The Gorgon's Head",
+        "audioUrl": "https://www.archive.org/download/tale_two_cities_librivox/tale_of_two_cities_15_dickens_64kb.mp3",
+        "duration": 1664
+      },
+      {
+        "title": "II.X: Two Promises",
+        "audioUrl": "https://www.archive.org/download/tale_two_cities_librivox/tale_of_two_cities_16_dickens_64kb.mp3",
+        "duration": 1267
+      },
+      {
+        "title": "II.XI: A Companion Picture",
+        "audioUrl": "https://www.archive.org/download/tale_two_cities_librivox/tale_of_two_cities_17_dickens_64kb.mp3",
+        "duration": 473
+      },
+      {
+        "title": "II.XII: The Fellow of Delicacy",
+        "audioUrl": "https://www.archive.org/download/tale_two_cities_librivox/tale_of_two_cities_18_dickens_64kb.mp3",
+        "duration": 886
+      },
+      {
+        "title": "II.XIII: The Fellow of no Delicacy",
+        "audioUrl": "https://www.archive.org/download/tale_two_cities_librivox/tale_of_two_cities_19_dickens_64kb.mp3",
+        "duration": 1098
+      },
+      {
+        "title": "II.XIV: The Honest Tradesman",
+        "audioUrl": "https://www.archive.org/download/tale_two_cities_librivox/tale_of_two_cities_20_dickens_64kb.mp3",
+        "duration": 1496
+      },
+      {
+        "title": "II.XV: Knitting",
+        "audioUrl": "https://www.archive.org/download/tale_two_cities_librivox/tale_of_two_cities_21_dickens_64kb.mp3",
+        "duration": 1576
+      },
+      {
+        "title": "II.XVI: Still Knitting",
+        "audioUrl": "https://www.archive.org/download/tale_two_cities_librivox/tale_of_two_cities_22_dickens_64kb.mp3",
+        "duration": 1834
+      },
+      {
+        "title": "II.XVII: One Night",
+        "audioUrl": "https://www.archive.org/download/tale_two_cities_librivox/tale_of_two_cities_23_dickens_64kb.mp3",
+        "duration": 713
+      },
+      {
+        "title": "II.XVIII: Nine Days",
+        "audioUrl": "https://www.archive.org/download/tale_two_cities_librivox/tale_of_two_cities_24_dickens_64kb.mp3",
+        "duration": 1017
+      },
+      {
+        "title": "II.XIX: An Opinion",
+        "audioUrl": "https://www.archive.org/download/tale_two_cities_librivox/tale_of_two_cities_25_dickens_64kb.mp3",
+        "duration": 1269
+      },
+      {
+        "title": "II.XX: A Plea",
+        "audioUrl": "https://www.archive.org/download/tale_two_cities_librivox/tale_of_two_cities_26_dickens_64kb.mp3",
+        "duration": 445
+      },
+      {
+        "title": "II.XXI: Echoing Footsteps",
+        "audioUrl": "https://www.archive.org/download/tale_two_cities_librivox/tale_of_two_cities_27_dickens_64kb.mp3",
+        "duration": 1578
+      },
+      {
+        "title": "II.XXII: The Sea Still Rises",
+        "audioUrl": "https://www.archive.org/download/tale_two_cities_librivox/tale_of_two_cities_28_dickens_64kb.mp3",
+        "duration": 781
+      },
+      {
+        "title": "II.XXIII: Fire Rises",
+        "audioUrl": "https://www.archive.org/download/tale_two_cities_librivox/tale_of_two_cities_29_dickens_64kb.mp3",
+        "duration": 1191
+      },
+      {
+        "title": "II.XXIV: Drawn to the Loadstone Rock",
+        "audioUrl": "https://www.archive.org/download/tale_two_cities_librivox/tale_of_two_cities_30_dickens_64kb.mp3",
+        "duration": 1800
+      },
+      {
+        "title": "III.I: In Secret",
+        "audioUrl": "https://www.archive.org/download/tale_two_cities_librivox/tale_of_two_cities_31_dickens_64kb.mp3",
+        "duration": 1591
+      },
+      {
+        "title": "III.II: The Grindstone",
+        "audioUrl": "https://www.archive.org/download/tale_two_cities_librivox/tale_of_two_cities_32_dickens_64kb.mp3",
+        "duration": 884
+      },
+      {
+        "title": "III.III: The Shadow",
+        "audioUrl": "https://www.archive.org/download/tale_two_cities_librivox/tale_of_two_cities_33_dickens_64kb.mp3",
+        "duration": 764
+      },
+      {
+        "title": "III.IV: Calm in Storm",
+        "audioUrl": "https://www.archive.org/download/tale_two_cities_librivox/tale_of_two_cities_34_dickens_64kb.mp3",
+        "duration": 902
+      },
+      {
+        "title": "III.V: The Woodsawyer",
+        "audioUrl": "https://www.archive.org/download/tale_two_cities_librivox/tale_of_two_cities_35_dickens_64kb.mp3",
+        "duration": 1003
+      },
+      {
+        "title": "III.VI: Triumph",
+        "audioUrl": "https://www.archive.org/download/tale_two_cities_librivox/tale_of_two_cities_36_dickens_64kb.mp3",
+        "duration": 1049
+      },
+      {
+        "title": "III.VII: A Knock at the Door",
+        "audioUrl": "https://www.archive.org/download/tale_two_cities_librivox/tale_of_two_cities_37_dickens_64kb.mp3",
+        "duration": 705
+      },
+      {
+        "title": "III.VIII: A Hand at Cards",
+        "audioUrl": "https://www.archive.org/download/tale_two_cities_librivox/tale_of_two_cities_38_dickens_64kb.mp3",
+        "duration": 1826
+      },
+      {
+        "title": "III.IX: The Game Made",
+        "audioUrl": "https://www.archive.org/download/tale_two_cities_librivox/tale_of_two_cities_39_dickens_64kb.mp3",
+        "duration": 1665
+      },
+      {
+        "title": "III.X: The Substance of the Shadow",
+        "audioUrl": "https://www.archive.org/download/tale_two_cities_librivox/tale_of_two_cities_40_dickens_64kb.mp3",
+        "duration": 2149
+      },
+      {
+        "title": "III.XI: Dusk",
+        "audioUrl": "https://www.archive.org/download/tale_two_cities_librivox/tale_of_two_cities_41_dickens_64kb.mp3",
+        "duration": 555
+      },
+      {
+        "title": "III.XII: Darkness",
+        "audioUrl": "https://www.archive.org/download/tale_two_cities_librivox/tale_of_two_cities_42_dickens_64kb.mp3",
+        "duration": 1170
+      },
+      {
+        "title": "III.XIII: Fiftytwo",
+        "audioUrl": "https://www.archive.org/download/tale_two_cities_librivox/tale_of_two_cities_43_dickens_64kb.mp3",
+        "duration": 1432
+      },
+      {
+        "title": "III.XIV: The Knitting Done",
+        "audioUrl": "https://www.archive.org/download/tale_two_cities_librivox/tale_of_two_cities_44_dickens_64kb.mp3",
+        "duration": 1696
+      },
+      {
+        "title": "III.XV: The Footsteps Die Out For Ever",
+        "audioUrl": "https://www.archive.org/download/tale_two_cities_librivox/tale_of_two_cities_45_dickens_64kb.mp3",
+        "duration": 877
+      }
+    ]
+  },
+  {
+    "slug": "frankenstein",
+    "title": "Frankenstein",
+    "author": "Mary Shelley",
+    "year": 1818,
+    "genre": "Horror & Gothic",
+    "description": "A young scientist assembles a living being from dead matter — then abandons it. Shelley’s creature, eloquent and unloved, pursues his maker across the ice in the novel that invented science fiction.",
+    "coverUrl": "https://covers.openlibrary.org/b/id/12356249-L.jpg",
+    "gutenbergId": 84,
+    "librivoxId": 381,
+    "librivoxUrl": "https://librivox.org/frankenstein-or-modern-prometheus-by-mary-w-shelley/",
+    "totalDuration": 29808,
+    "textMapping": "proportional",
+    "chapters": [
+      {
+        "title": "Letters",
+        "audioUrl": "https://www.archive.org/download/frankenstein_shelley/frankenstein_00_shelley_64kb.mp3",
+        "duration": 2193
+      },
+      {
+        "title": "Chapter 1",
+        "audioUrl": "https://www.archive.org/download/frankenstein_shelley/frankenstein_01_shelley_64kb.mp3",
+        "duration": 630
+      },
+      {
+        "title": "Chapter 2",
+        "audioUrl": "https://www.archive.org/download/frankenstein_shelley/frankenstein_02_shelley_64kb.mp3",
+        "duration": 1028
+      },
+      {
+        "title": "Chapters 3-4",
+        "audioUrl": "https://www.archive.org/download/frankenstein_shelley/frankenstein_03_shelley_64kb.mp3",
+        "duration": 1910
+      },
+      {
+        "title": "Chapter 5",
+        "audioUrl": "https://www.archive.org/download/frankenstein_shelley/frankenstein_04_shelley_64kb.mp3",
+        "duration": 1028
+      },
+      {
+        "title": "Chapter 6",
+        "audioUrl": "https://www.archive.org/download/frankenstein_shelley/frankenstein_05_shelley_64kb.mp3",
+        "duration": 1174
+      },
+      {
+        "title": "Chapter 7",
+        "audioUrl": "https://www.archive.org/download/frankenstein_shelley/frankenstein_06_shelley_64kb.mp3",
+        "duration": 1304
+      },
+      {
+        "title": "Chapter 8",
+        "audioUrl": "https://www.archive.org/download/frankenstein_shelley/frankenstein_07_shelley_64kb.mp3",
+        "duration": 1236
+      },
+      {
+        "title": "Chapter 9",
+        "audioUrl": "https://www.archive.org/download/frankenstein_shelley/frankenstein_08_shelley_64kb.mp3",
+        "duration": 824
+      },
+      {
+        "title": "Chapter 10",
+        "audioUrl": "https://www.archive.org/download/frankenstein_shelley/frankenstein_09_shelley_64kb.mp3",
+        "duration": 986
+      },
+      {
+        "title": "Chapter 11",
+        "audioUrl": "https://www.archive.org/download/frankenstein_shelley/frankenstein_10_shelley_64kb.mp3",
+        "duration": 1064
+      },
+      {
+        "title": "Chapter 12",
+        "audioUrl": "https://www.archive.org/download/frankenstein_shelley/frankenstein_11_shelley_64kb.mp3",
+        "duration": 826
+      },
+      {
+        "title": "Chapter 13",
+        "audioUrl": "https://www.archive.org/download/frankenstein_shelley/frankenstein_12_shelley_64kb.mp3",
+        "duration": 803
+      },
+      {
+        "title": "Chapters 14-15",
+        "audioUrl": "https://www.archive.org/download/frankenstein_shelley/frankenstein_13_shelley_64kb.mp3",
+        "duration": 1628
+      },
+      {
+        "title": "Chapter 16",
+        "audioUrl": "https://www.archive.org/download/frankenstein_shelley/frankenstein_14_shelley_64kb.mp3",
+        "duration": 1333
+      },
+      {
+        "title": "Chapter 17",
+        "audioUrl": "https://www.archive.org/download/frankenstein_shelley/frankenstein_15_shelley_64kb.mp3",
+        "duration": 812
+      },
+      {
+        "title": "Chapter 18",
+        "audioUrl": "https://www.archive.org/download/frankenstein_shelley/frankenstein_16_shelley_64kb.mp3",
+        "duration": 1192
+      },
+      {
+        "title": "Chapter 19",
+        "audioUrl": "https://www.archive.org/download/frankenstein_shelley/frankenstein_17_shelley_64kb.mp3",
+        "duration": 1008
+      },
+      {
+        "title": "Chapter 20",
+        "audioUrl": "https://www.archive.org/download/frankenstein_shelley/frankenstein_18_shelley_64kb.mp3",
+        "duration": 1498
+      },
+      {
+        "title": "Chapters 21-22",
+        "audioUrl": "https://www.archive.org/download/frankenstein_shelley/frankenstein_19_shelley_64kb.mp3",
+        "duration": 2451
+      },
+      {
+        "title": "Chapter 23",
+        "audioUrl": "https://www.archive.org/download/frankenstein_shelley/frankenstein_20_shelley_64kb.mp3",
+        "duration": 1166
+      },
+      {
+        "title": "Chapter 24",
+        "audioUrl": "https://www.archive.org/download/frankenstein_shelley/frankenstein_21_shelley_64kb.mp3",
+        "duration": 3714
+      }
+    ]
+  },
+  {
+    "slug": "dracula",
+    "title": "Dracula",
+    "author": "Bram Stoker",
+    "year": 1897,
+    "genre": "Horror & Gothic",
+    "description": "Told in letters, diaries, and news clippings, an ancient vampire moves from his Transylvanian castle to the heart of London. Stoker’s masterpiece of creeping dread defined the vampire for every story that followed.",
+    "coverUrl": "https://covers.openlibrary.org/b/id/12216503-L.jpg",
+    "gutenbergId": 345,
+    "librivoxId": 271,
+    "librivoxUrl": "https://librivox.org/dracula-by-bram-stoker/",
+    "totalDuration": 59468,
+    "textMapping": "exact",
+    "chapters": [
+      {
+        "title": "Chapter 01",
+        "audioUrl": "https://www.archive.org/download/dracula_librivox/dracula_01_stoker_64kb.mp3",
+        "duration": 2218
+      },
+      {
+        "title": "Chapter 02",
+        "audioUrl": "https://www.archive.org/download/dracula_librivox/dracula_02_stoker_64kb.mp3",
+        "duration": 1796
+      },
+      {
+        "title": "Chapter 03",
+        "audioUrl": "https://www.archive.org/download/dracula_librivox/dracula_03_stoker_64kb.mp3",
+        "duration": 2825
+      },
+      {
+        "title": "Chapter 04",
+        "audioUrl": "https://www.archive.org/download/dracula_librivox/dracula_04_stoker_64kb.mp3",
+        "duration": 2176
+      },
+      {
+        "title": "Chapter 05",
+        "audioUrl": "https://www.archive.org/download/dracula_librivox/dracula_05_stoker_64kb.mp3",
+        "duration": 1101
+      },
+      {
+        "title": "Chapter 06",
+        "audioUrl": "https://www.archive.org/download/dracula_librivox/dracula_06_stoker_64kb.mp3",
+        "duration": 1910
+      },
+      {
+        "title": "Chapter 07",
+        "audioUrl": "https://www.archive.org/download/dracula_librivox/dracula_07_stoker_64kb.mp3",
+        "duration": 2507
+      },
+      {
+        "title": "Chapter 08",
+        "audioUrl": "https://www.archive.org/download/dracula_librivox/dracula_08_stoker_64kb.mp3",
+        "duration": 2317
+      },
+      {
+        "title": "Chapter 09",
+        "audioUrl": "https://www.archive.org/download/dracula_librivox/dracula_09_stoker_64kb.mp3",
+        "duration": 1953
+      },
+      {
+        "title": "Chapter 10",
+        "audioUrl": "https://www.archive.org/download/dracula_librivox/dracula_10_stoker_64kb.mp3",
+        "duration": 2000
+      },
+      {
+        "title": "Chapter 11",
+        "audioUrl": "https://www.archive.org/download/dracula_librivox/dracula_11_stoker_64kb.mp3",
+        "duration": 2120
+      },
+      {
+        "title": "Chapter 12",
+        "audioUrl": "https://www.archive.org/download/dracula_librivox/dracula_12_stoker_64kb.mp3",
+        "duration": 2650
+      },
+      {
+        "title": "Chapter 13",
+        "audioUrl": "https://www.archive.org/download/dracula_librivox/dracula_13_stoker_64kb.mp3",
+        "duration": 2688
+      },
+      {
+        "title": "Chapter 14",
+        "audioUrl": "https://www.archive.org/download/dracula_librivox/dracula_14_stoker_64kb.mp3",
+        "duration": 2355
+      },
+      {
+        "title": "Chapter 15",
+        "audioUrl": "https://www.archive.org/download/dracula_librivox/dracula_15_stoker_64kb.mp3",
+        "duration": 2371
+      },
+      {
+        "title": "Chapter 16",
+        "audioUrl": "https://www.archive.org/download/dracula_librivox/dracula_16_stoker_64kb.mp3",
+        "duration": 1849
+      },
+      {
+        "title": "Chapter 17",
+        "audioUrl": "https://www.archive.org/download/dracula_librivox/dracula_17_stoker_64kb.mp3",
+        "duration": 2044
+      },
+      {
+        "title": "Chapter 18",
+        "audioUrl": "https://www.archive.org/download/dracula_librivox/dracula_18_stoker_64kb.mp3",
+        "duration": 2137
+      },
+      {
+        "title": "Chapter 19",
+        "audioUrl": "https://www.archive.org/download/dracula_librivox/dracula_19_stoker_64kb.mp3",
+        "duration": 1810
+      },
+      {
+        "title": "Chapter 20",
+        "audioUrl": "https://www.archive.org/download/dracula_librivox/dracula_20_stoker_64kb.mp3",
+        "duration": 2130
+      },
+      {
+        "title": "Chapter 21",
+        "audioUrl": "https://www.archive.org/download/dracula_librivox/dracula_21_stoker_64kb.mp3",
+        "duration": 1885
+      },
+      {
+        "title": "Chapter 22",
+        "audioUrl": "https://www.archive.org/download/dracula_librivox/dracula_22_stoker_64kb.mp3",
+        "duration": 1960
+      },
+      {
+        "title": "Chapter 23",
+        "audioUrl": "https://www.archive.org/download/dracula_librivox/dracula_23_stoker_64kb.mp3",
+        "duration": 1716
+      },
+      {
+        "title": "Chapter 24",
+        "audioUrl": "https://www.archive.org/download/dracula_librivox/dracula_24_stoker_64kb.mp3",
+        "duration": 2522
+      },
+      {
+        "title": "Chapter 25",
+        "audioUrl": "https://www.archive.org/download/dracula_librivox/dracula_25_stoker_64kb.mp3",
+        "duration": 2124
+      },
+      {
+        "title": "Chapter 26",
+        "audioUrl": "https://www.archive.org/download/dracula_librivox/dracula_26_stoker_64kb.mp3",
+        "duration": 2615
+      },
+      {
+        "title": "Chapter 27",
+        "audioUrl": "https://www.archive.org/download/dracula_librivox/dracula_27_stoker_64kb.mp3",
+        "duration": 3689
+      }
+    ]
+  },
+  {
+    "slug": "jekyll-and-hyde",
+    "title": "The Strange Case of Dr. Jekyll and Mr. Hyde",
+    "author": "Robert Louis Stevenson",
+    "year": 1886,
+    "genre": "Horror & Gothic",
+    "description": "A respectable London doctor and a violent stranger share more than an address. Stevenson’s taut novella about the divided self gave the language a permanent shorthand for the monster within.",
+    "coverUrl": "https://covers.openlibrary.org/b/id/295773-L.jpg",
+    "gutenbergId": 43,
+    "librivoxId": 417,
+    "librivoxUrl": "https://librivox.org/the-strange-case-of-dr-jekyll-mr-hyde-by-robert-louis-stevenson/",
+    "totalDuration": 11305,
+    "textMapping": "proportional",
+    "chapters": [
+      {
+        "title": "Chapter 1 to 3",
+        "audioUrl": "https://www.archive.org/download/jekyll_and_hyde_librivox/jekyllandhyde_01-03_stevenson_64kb.mp3",
+        "duration": 2583
+      },
+      {
+        "title": "Chapter 4 to 7",
+        "audioUrl": "https://www.archive.org/download/jekyll_and_hyde_librivox/jekyllandhyde_04-07_stevenson_64kb.mp3",
+        "duration": 2331
+      },
+      {
+        "title": "Chapter 8 to 9",
+        "audioUrl": "https://www.archive.org/download/jekyll_and_hyde_librivox/jekyllandhyde_08-09_stevenson_64kb.mp3",
+        "duration": 3153
+      },
+      {
+        "title": "Chapter 10",
+        "audioUrl": "https://www.archive.org/download/jekyll_and_hyde_librivox/jekyllandhyde_10_stevenson_64kb.mp3",
+        "duration": 3238
+      }
+    ]
+  },
+  {
+    "slug": "sherlock-holmes",
+    "title": "The Adventures of Sherlock Holmes",
+    "author": "Arthur Conan Doyle",
+    "year": 1892,
+    "genre": "Mystery & Adventure",
+    "description": "Twelve cases from 221B Baker Street, from “A Scandal in Bohemia” to “The Speckled Band.” Doyle’s detective at his sharpest — observing everything, forgiving nothing, narrated by the ever-loyal Dr. Watson.",
+    "coverUrl": "https://covers.openlibrary.org/b/id/6717853-L.jpg",
+    "gutenbergId": 1661,
+    "librivoxId": 314,
+    "librivoxUrl": "https://librivox.org/the-adventures-of-sherlock-holmes/",
+    "totalDuration": 37079,
+    "textMapping": "proportional",
+    "chapters": [
+      {
+        "title": "A Scandal in Bohemia",
+        "audioUrl": "https://www.archive.org/download/adventures_holmes/adventureholmes_01_doyle_64kb.mp3",
+        "duration": 3906
+      },
+      {
+        "title": "The Red-Headed League",
+        "audioUrl": "https://www.archive.org/download/adventures_holmes/adventureholmes_02_doyle_64kb.mp3",
+        "duration": 3546
+      },
+      {
+        "title": "A Case of Identity",
+        "audioUrl": "https://www.archive.org/download/adventures_holmes/adventureholmes_03_doyle_64kb.mp3",
+        "duration": 2719
+      },
+      {
+        "title": "The Boscombe Valley Mystery",
+        "audioUrl": "https://www.archive.org/download/adventures_holmes/adventureholmes_04_doyle_64kb.mp3",
+        "duration": 3180
+      },
+      {
+        "title": "The Five Orange Pips",
+        "audioUrl": "https://www.archive.org/download/adventures_holmes/adventureholmes_05_doyle_64kb.mp3",
+        "duration": 2479
+      },
+      {
+        "title": "The Man with the Twisted Lip",
+        "audioUrl": "https://www.archive.org/download/adventures_holmes/adventureholmes_06_doyle_64kb.mp3",
+        "duration": 3095
+      },
+      {
+        "title": "The Adventure of the Blue Carbuncle",
+        "audioUrl": "https://www.archive.org/download/adventures_holmes/adventureholmes_07_doyle_64kb.mp3",
+        "duration": 2493
+      },
+      {
+        "title": "The Adventure of the Speckled Band",
+        "audioUrl": "https://www.archive.org/download/adventures_holmes/adventureholmes_08_doyle_64kb.mp3",
+        "duration": 3257
+      },
+      {
+        "title": "The Adventure of the Engineer's Thumb",
+        "audioUrl": "https://www.archive.org/download/adventures_holmes/adventureholmes_09_doyle_64kb.mp3",
+        "duration": 2523
+      },
+      {
+        "title": "The Adventure of the Noble Bachelor",
+        "audioUrl": "https://www.archive.org/download/adventures_holmes/adventureholmes_10_doyle_64kb.mp3",
+        "duration": 2692
+      },
+      {
+        "title": "The Adventure of the Beryl Coronet",
+        "audioUrl": "https://www.archive.org/download/adventures_holmes/adventureholmes_11_doyle_64kb.mp3",
+        "duration": 3625
+      },
+      {
+        "title": "The Adventure of the Copper Beeches",
+        "audioUrl": "https://www.archive.org/download/adventures_holmes/adventureholmes_12_doyle_64kb.mp3",
+        "duration": 3564
+      }
+    ]
+  },
+  {
+    "slug": "count-of-monte-cristo",
+    "title": "The Count of Monte Cristo",
+    "author": "Alexandre Dumas",
+    "year": 1844,
+    "genre": "Mystery & Adventure",
+    "description": "Betrayed on his wedding day and buried alive in an island prison, Edmond Dantès escapes with a fortune and a plan. Dumas’ sprawling epic of patience and revenge is the ultimate long listen.",
+    "coverUrl": "https://covers.openlibrary.org/b/id/8851690-L.jpg",
+    "gutenbergId": 1184,
+    "librivoxId": 47,
+    "librivoxUrl": "https://librivox.org/the-count-of-monte-cristo-by-alexandre-dumas/",
+    "totalDuration": 197804,
+    "textMapping": "proportional",
+    "chapters": [
+      {
+        "title": "Marseilles–The Arrival",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_001_dumas_64kb.mp3",
+        "duration": 1179
+      },
+      {
+        "title": "Father and Son",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_002_dumas_64kb.mp3",
+        "duration": 1157
+      },
+      {
+        "title": "The Catalans",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_003_dumas_64kb.mp3",
+        "duration": 1898
+      },
+      {
+        "title": "Conspiracy",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_004_dumas_64kb.mp3",
+        "duration": 1132
+      },
+      {
+        "title": "The Marriage-Feast",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_005_dumas_64kb.mp3",
+        "duration": 2013
+      },
+      {
+        "title": "The Deputy Procureur du Roi",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_006_dumas_64kb.mp3",
+        "duration": 1563
+      },
+      {
+        "title": "The Examination",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_007_dumas_64kb.mp3",
+        "duration": 1284
+      },
+      {
+        "title": "The Chateau D’If",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_008_dumas_64kb.mp3",
+        "duration": 1274
+      },
+      {
+        "title": "The Evening of the Betrothal",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_009_dumas_64kb.mp3",
+        "duration": 658
+      },
+      {
+        "title": "The King’s Closet at the Tuileries",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_010_dumas_64kb.mp3",
+        "duration": 1083
+      },
+      {
+        "title": "The Corsican Ogre",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_011_dumas_64kb.mp3",
+        "duration": 1251
+      },
+      {
+        "title": "Father and Son",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_012_dumas_64kb.mp3",
+        "duration": 1019
+      },
+      {
+        "title": "The Hundred Days",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_013_dumas_64kb.mp3",
+        "duration": 1005
+      },
+      {
+        "title": "The Two Prisoners",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_014_dumas_64kb.mp3",
+        "duration": 1345
+      },
+      {
+        "title": "Number 34 and Number 27",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_015_dumas_64kb.mp3",
+        "duration": 1983
+      },
+      {
+        "title": "A Learned Italian",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_016_dumas_64kb.mp3",
+        "duration": 1688
+      },
+      {
+        "title": "The Abbe’s Chamb",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_017_dumas_64kb.mp3",
+        "duration": 3033
+      },
+      {
+        "title": "The Treasure",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_018_dumas_64kb.mp3",
+        "duration": 1745
+      },
+      {
+        "title": "The Third Attack",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_019_dumas_64kb.mp3",
+        "duration": 1383
+      },
+      {
+        "title": "The Cemetary of Chateau D’If",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_020_dumas_64kb.mp3",
+        "duration": 762
+      },
+      {
+        "title": "The Island of Tiboulen",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_021_dumas_64kb.mp3",
+        "duration": 1416
+      },
+      {
+        "title": "The Smugglers",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_022_dumas_64kb.mp3",
+        "duration": 1104
+      },
+      {
+        "title": "The Island of Monte Cristo",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_023_dumas_64kb.mp3",
+        "duration": 1176
+      },
+      {
+        "title": "The Secret Cave",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_024_dumas_64kb.mp3",
+        "duration": 1053
+      },
+      {
+        "title": "The Unknown",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_025_dumas_64kb.mp3",
+        "duration": 1256
+      },
+      {
+        "title": "The Unknown, alternate version",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_025alt_dumas_64kb.mp3",
+        "duration": 1112
+      },
+      {
+        "title": "The Pont du Gard Inn",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_026_dumas_64kb.mp3",
+        "duration": 2296
+      },
+      {
+        "title": "The Pont du Gard Inn, alternate version",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_026alt_dumas_64kb.mp3",
+        "duration": 1888
+      },
+      {
+        "title": "The Story",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_027_dumas_64kb.mp3",
+        "duration": 1711
+      },
+      {
+        "title": "The Prison Register",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_028_dumas_64kb.mp3",
+        "duration": 933
+      },
+      {
+        "title": "The House of Morrel & Son",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_029_dumas_64kb.mp3",
+        "duration": 1767
+      },
+      {
+        "title": "The Fifth of September",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_030_dumas_64kb.mp3",
+        "duration": 2189
+      },
+      {
+        "title": "Italy: Sinbad the Sailor",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_031_dumas_64kb.mp3",
+        "duration": 3441
+      },
+      {
+        "title": "Italy: Sinbad the Sailor, alternate version",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_031alt_dumas_64kb.mp3",
+        "duration": 2965
+      },
+      {
+        "title": "The Waking",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_032_dumas_64kb.mp3",
+        "duration": 884
+      },
+      {
+        "title": "The Waking, alternate version",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_032alt_dumas_64kb.mp3",
+        "duration": 768
+      },
+      {
+        "title": "Roman Bandits",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_033_dumas_64kb.mp3",
+        "duration": 4161
+      },
+      {
+        "title": "Roman Bandits, alternate version",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_033alt_dumas_64kb.mp3",
+        "duration": 3834
+      },
+      {
+        "title": "The Colosseum part 1",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_034a_dumas_64kb.mp3",
+        "duration": 2121
+      },
+      {
+        "title": "The Colosseum part 2",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_034b_dumas_64kb.mp3",
+        "duration": 2096
+      },
+      {
+        "title": "La Mazzolata",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_035_dumas_64kb.mp3",
+        "duration": 1842
+      },
+      {
+        "title": "The Carnival at Rom",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_036_dumas_64kb.mp3",
+        "duration": 2337
+      },
+      {
+        "title": "The Catacombs of Saint Sebastian",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_037_dumas_64kb.mp3",
+        "duration": 2109
+      },
+      {
+        "title": "The Compact",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_038_dumas_64kb.mp3",
+        "duration": 1158
+      },
+      {
+        "title": "The Guest",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_039_dumas_64kb.mp3",
+        "duration": 1051
+      },
+      {
+        "title": "The Breakfast",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_040_dumas_64kb.mp3",
+        "duration": 2895
+      },
+      {
+        "title": "The Presentation",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_041_dumas_64kb.mp3",
+        "duration": 1685
+      },
+      {
+        "title": "Monsieur Bertuccio",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_042_dumas_64kb.mp3",
+        "duration": 556
+      },
+      {
+        "title": "The House at Auteuil",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_043_dumas_64kb.mp3",
+        "duration": 971
+      },
+      {
+        "title": "The House at Auteuil, altenate version",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_043alt_dumas_64kb.mp3",
+        "duration": 1161
+      },
+      {
+        "title": "The Vendetta",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_044_dumas_64kb.mp3",
+        "duration": 3251
+      },
+      {
+        "title": "The Vendetta , alternate version",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_044alt_dumas_64kb.mp3",
+        "duration": 3268
+      },
+      {
+        "title": "The Rain of Blood",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_045_dumas_64kb.mp3",
+        "duration": 2080
+      },
+      {
+        "title": "The Rain of Blood, alternate version",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_045alt_dumas_64kb.mp3",
+        "duration": 2121
+      },
+      {
+        "title": "Unlimited Credit",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_046_dumas_64kb.mp3",
+        "duration": 1959
+      },
+      {
+        "title": "The Dappled Greys",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_047_dumas_64kb.mp3",
+        "duration": 1942
+      },
+      {
+        "title": "The Ideology",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_048_dumas_64kb.mp3",
+        "duration": 1823
+      },
+      {
+        "title": "Haidee",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_049_dumas_64kb.mp3",
+        "duration": 834
+      },
+      {
+        "title": "The Morrel Family",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_050_dumas_64kb.mp3",
+        "duration": 1117
+      },
+      {
+        "title": "Pyramus and Thisbe",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_051_dumas_64kb.mp3",
+        "duration": 1717
+      },
+      {
+        "title": "Toxicology",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_052_dumas_64kb.mp3",
+        "duration": 2189
+      },
+      {
+        "title": "Robert le Diable",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_053_dumas_64kb.mp3",
+        "duration": 2164
+      },
+      {
+        "title": "A Flurry in Stocks",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_054_dumas_64kb.mp3",
+        "duration": 1391
+      },
+      {
+        "title": "Major Cavalcanti",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_055_dumas_64kb.mp3",
+        "duration": 1269
+      },
+      {
+        "title": "Andrea Cavalcanti",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_056_dumas_64kb.mp3",
+        "duration": 1486
+      },
+      {
+        "title": "In the Lucerne Patch",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_057_dumas_64kb.mp3",
+        "duration": 1607
+      },
+      {
+        "title": "M. Noirtier de Villefort",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_058_dumas_64kb.mp3",
+        "duration": 1649
+      },
+      {
+        "title": "The Will",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_059_dumas_64kb.mp3",
+        "duration": 1609
+      },
+      {
+        "title": "The Telegraph",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_060_dumas_64kb.mp3",
+        "duration": 1742
+      },
+      {
+        "title": "How a Gardener…",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_061_dumas_64kb.mp3",
+        "duration": 1293
+      },
+      {
+        "title": "Ghosts",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_062_dumas_64kb.mp3",
+        "duration": 1303
+      },
+      {
+        "title": "The Dinner",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_063_dumas_64kb.mp3",
+        "duration": 1311
+      },
+      {
+        "title": "The Beggar",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_064_dumas_64kb.mp3",
+        "duration": 1423
+      },
+      {
+        "title": "A Conjugal Scene",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_065_dumas_64kb.mp3",
+        "duration": 1411
+      },
+      {
+        "title": "Matrimonial Projects",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_066_dumas_64kb.mp3",
+        "duration": 1413
+      },
+      {
+        "title": "At the Office of the King’s Attorney",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_067_dumas_64kb.mp3",
+        "duration": 1504
+      },
+      {
+        "title": "A Summer Ball",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_068_dumas_64kb.mp3",
+        "duration": 1027
+      },
+      {
+        "title": "The Inquiry",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_069_dumas_64kb.mp3",
+        "duration": 1348
+      },
+      {
+        "title": "The Ball",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_070_dumas_64kb.mp3",
+        "duration": 1294
+      },
+      {
+        "title": "Bread and Salt",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_071_dumas_64kb.mp3",
+        "duration": 528
+      },
+      {
+        "title": "Madame de Saint-Meran",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_072_dumas_64kb.mp3",
+        "duration": 1770
+      },
+      {
+        "title": "The Promise, part 1",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_073a_dumas_64kb.mp3",
+        "duration": 1691
+      },
+      {
+        "title": "The Promise, part 2",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_073b_dumas_64kb.mp3",
+        "duration": 1490
+      },
+      {
+        "title": "The Villefort Family Vault",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_074_dumas_64kb.mp3",
+        "duration": 1418
+      },
+      {
+        "title": "A Signed Statement",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_075_dumas_64kb.mp3",
+        "duration": 470
+      },
+      {
+        "title": "The Progress of Cavalcanti the Younger",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_076_dumas_64kb.mp3",
+        "duration": 1580
+      },
+      {
+        "title": "Haidee",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_077_dumas_64kb.mp3",
+        "duration": 3405
+      },
+      {
+        "title": "We Hear from Yanina",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_078_dumas_64kb.mp3",
+        "duration": 2342
+      },
+      {
+        "title": "The Lemonade",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_079_dumas_64kb.mp3",
+        "duration": 1535
+      },
+      {
+        "title": "The Accusation",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_080_dumas_64kb.mp3",
+        "duration": 743
+      },
+      {
+        "title": "The Room of the Retired Baker",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_081_dumas_64kb.mp3",
+        "duration": 1921
+      },
+      {
+        "title": "The Burglary",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_082_dumas_64kb.mp3",
+        "duration": 1602
+      },
+      {
+        "title": "The Hand of God",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_083_dumas_64kb.mp3",
+        "duration": 795
+      },
+      {
+        "title": "Beauchamp",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_084_dumas_64kb.mp3",
+        "duration": 827
+      },
+      {
+        "title": "The Journey",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_085_dumas_64kb.mp3",
+        "duration": 1194
+      },
+      {
+        "title": "The Trial",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_086_dumas_64kb.mp3",
+        "duration": 1648
+      },
+      {
+        "title": "The Challenge",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_087_dumas_64kb.mp3",
+        "duration": 817
+      },
+      {
+        "title": "The Insult",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_088_dumas_64kb.mp3",
+        "duration": 1181
+      },
+      {
+        "title": "A Nocturnal Visit",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_089_dumas_64kb.mp3",
+        "duration": 1428
+      },
+      {
+        "title": "The Meeting",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_090_dumas_64kb.mp3",
+        "duration": 2228
+      },
+      {
+        "title": "Mother and Son",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_091_dumas_64kb.mp3",
+        "duration": 1234
+      },
+      {
+        "title": "The Suicide",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_092_dumas_64kb.mp3",
+        "duration": 1018
+      },
+      {
+        "title": "Valentine",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_093_dumas_64kb.mp3",
+        "duration": 884
+      },
+      {
+        "title": "Maximilian’s Avowal",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_094_dumas_64kb.mp3",
+        "duration": 1745
+      },
+      {
+        "title": "Maximilian’s Avowal, alternate version",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_094alt_dumas_64kb.mp3",
+        "duration": 1702
+      },
+      {
+        "title": "Father and Daughter",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_095_dumas_64kb.mp3",
+        "duration": 1480
+      },
+      {
+        "title": "The Contract",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_096_dumas_64kb.mp3",
+        "duration": 1250
+      },
+      {
+        "title": "The Departure for Belgium",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_097_dumas_64kb.mp3",
+        "duration": 736
+      },
+      {
+        "title": "The Bell and Bottle Tavern",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_098_dumas_64kb.mp3",
+        "duration": 1486
+      },
+      {
+        "title": "The Law",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_099_dumas_64kb.mp3",
+        "duration": 1326
+      },
+      {
+        "title": "The Apparition",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_100_dumas_64kb.mp3",
+        "duration": 961
+      },
+      {
+        "title": "Locusta",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_101_dumas_64kb.mp3",
+        "duration": 799
+      },
+      {
+        "title": "Valentine",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_102_dumas_64kb.mp3",
+        "duration": 682
+      },
+      {
+        "title": "Maximilian",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_103_dumas_64kb.mp3",
+        "duration": 965
+      },
+      {
+        "title": "Danglars Signature",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_104_dumas_64kb.mp3",
+        "duration": 1352
+      },
+      {
+        "title": "The Cemetery of Pere-la-Chaise",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_105_dumas_64kb.mp3",
+        "duration": 1826
+      },
+      {
+        "title": "Dividing the Proceeds",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_106_dumas_64kb.mp3",
+        "duration": 2034
+      },
+      {
+        "title": "The Lions’ Den",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_107_dumas_64kb.mp3",
+        "duration": 878
+      },
+      {
+        "title": "The Judge",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_108_dumas_64kb.mp3",
+        "duration": 1443
+      },
+      {
+        "title": "The Assizes",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_109_dumas_64kb.mp3",
+        "duration": 784
+      },
+      {
+        "title": "The Indictment",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_110_dumas_64kb.mp3",
+        "duration": 863
+      },
+      {
+        "title": "Expiation",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_111_dumas_64kb.mp3",
+        "duration": 1405
+      },
+      {
+        "title": "The Departure",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_112_dumas_64kb.mp3",
+        "duration": 2335
+      },
+      {
+        "title": "The Past",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_113_dumas_64kb.mp3",
+        "duration": 1871
+      },
+      {
+        "title": "Peppino",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_114_dumas_64kb.mp3",
+        "duration": 1718
+      },
+      {
+        "title": "Luigi Vampa’s Bill of Fare",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_115_dumas_64kb.mp3",
+        "duration": 844
+      },
+      {
+        "title": "The Pardon",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_116_dumas_64kb.mp3",
+        "duration": 686
+      },
+      {
+        "title": "The Fifth of October",
+        "audioUrl": "https://www.archive.org/download/count_monte_cristo_0711_librivox/count_of_monte_cristo_117_dumas_64kb.mp3",
+        "duration": 1948
+      }
+    ]
+  },
+  {
+    "slug": "treasure-island",
+    "title": "Treasure Island",
+    "author": "Robert Louis Stevenson",
+    "year": 1883,
+    "genre": "Mystery & Adventure",
+    "description": "A map, a mutiny, and a one-legged cook named Long John Silver. Stevenson’s adventure set the template for every pirate story since — and remains the best of them.",
+    "coverUrl": "https://covers.openlibrary.org/b/id/13859660-L.jpg",
+    "gutenbergId": 120,
+    "librivoxId": 449,
+    "librivoxUrl": "https://librivox.org/treasure-island-by-robert-louis-stevenson/",
+    "totalDuration": 26952,
+    "textMapping": "proportional",
+    "chapters": [
+      {
+        "title": "Chapters 1-2",
+        "audioUrl": "https://www.archive.org/download/treasureisland_librivox/treasure_island_01-02_stevenson_64kb.mp3",
+        "duration": 1520
+      },
+      {
+        "title": "Chapters 3-4",
+        "audioUrl": "https://www.archive.org/download/treasureisland_librivox/treasure_island_03-04_stevenson_64kb.mp3",
+        "duration": 1759
+      },
+      {
+        "title": "Chapters 5-6",
+        "audioUrl": "https://www.archive.org/download/treasureisland_librivox/treasure_island_05-06_stevenson_64kb.mp3",
+        "duration": 1693
+      },
+      {
+        "title": "Chapters 7-8",
+        "audioUrl": "https://www.archive.org/download/treasureisland_librivox/treasure_island_07-08_stevenson_64kb.mp3",
+        "duration": 1385
+      },
+      {
+        "title": "Chapters 9-10",
+        "audioUrl": "https://www.archive.org/download/treasureisland_librivox/treasure_island_09-10_stevenson_64kb.mp3",
+        "duration": 1887
+      },
+      {
+        "title": "Chapters 11-12",
+        "audioUrl": "https://www.archive.org/download/treasureisland_librivox/treasure_island_11-12_stevenson_64kb.mp3",
+        "duration": 1391
+      },
+      {
+        "title": "Chapter 13",
+        "audioUrl": "https://www.archive.org/download/treasureisland_librivox/treasure_island_13_stevenson_64kb.mp3",
+        "duration": 639
+      },
+      {
+        "title": "Chapter 14",
+        "audioUrl": "https://www.archive.org/download/treasureisland_librivox/treasure_island_14_stevenson_64kb.mp3",
+        "duration": 742
+      },
+      {
+        "title": "Chapter 15",
+        "audioUrl": "https://www.archive.org/download/treasureisland_librivox/treasure_island_15_stevenson_64kb.mp3",
+        "duration": 997
+      },
+      {
+        "title": "Chapter 16",
+        "audioUrl": "https://www.archive.org/download/treasureisland_librivox/treasure_island_16_stevenson_64kb.mp3",
+        "duration": 685
+      },
+      {
+        "title": "Chapter 17",
+        "audioUrl": "https://www.archive.org/download/treasureisland_librivox/treasure_island_17_stevenson_64kb.mp3",
+        "duration": 803
+      },
+      {
+        "title": "Chapter 18",
+        "audioUrl": "https://www.archive.org/download/treasureisland_librivox/treasure_island_18_stevenson_64kb.mp3",
+        "duration": 855
+      },
+      {
+        "title": "Chapter 19",
+        "audioUrl": "https://www.archive.org/download/treasureisland_librivox/treasure_island_19_stevenson_64kb.mp3",
+        "duration": 771
+      },
+      {
+        "title": "Chapter 20",
+        "audioUrl": "https://www.archive.org/download/treasureisland_librivox/treasure_island_20_stevenson_64kb.mp3",
+        "duration": 768
+      },
+      {
+        "title": "Chapter 21",
+        "audioUrl": "https://www.archive.org/download/treasureisland_librivox/treasure_island_21_stevenson_64kb.mp3",
+        "duration": 671
+      },
+      {
+        "title": "Chapter 22",
+        "audioUrl": "https://www.archive.org/download/treasureisland_librivox/treasure_island_22_stevenson_64kb.mp3",
+        "duration": 650
+      },
+      {
+        "title": "Chapters 23-24",
+        "audioUrl": "https://www.archive.org/download/treasureisland_librivox/treasure_island_23-24_stevenson_64kb.mp3",
+        "duration": 1329
+      },
+      {
+        "title": "Chapters 25-26",
+        "audioUrl": "https://www.archive.org/download/treasureisland_librivox/treasure_island_25-26_stevenson_64kb.mp3",
+        "duration": 1967
+      },
+      {
+        "title": "Chapter 27",
+        "audioUrl": "https://www.archive.org/download/treasureisland_librivox/treasure_island_27_stevenson_64kb.mp3",
+        "duration": 701
+      },
+      {
+        "title": "Chapter 28",
+        "audioUrl": "https://www.archive.org/download/treasureisland_librivox/treasure_island_28_stevenson_64kb.mp3",
+        "duration": 924
+      },
+      {
+        "title": "Chapter 29",
+        "audioUrl": "https://www.archive.org/download/treasureisland_librivox/treasure_island_29_stevenson_64kb.mp3",
+        "duration": 839
+      },
+      {
+        "title": "Chapter 30",
+        "audioUrl": "https://www.archive.org/download/treasureisland_librivox/treasure_island_30_stevenson_64kb.mp3",
+        "duration": 883
+      },
+      {
+        "title": "Chapter 31",
+        "audioUrl": "https://www.archive.org/download/treasureisland_librivox/treasure_island_31_stevenson_64kb.mp3",
+        "duration": 871
+      },
+      {
+        "title": "Chapter 32",
+        "audioUrl": "https://www.archive.org/download/treasureisland_librivox/treasure_island_32_stevenson_64kb.mp3",
+        "duration": 748
+      },
+      {
+        "title": "Chapter 33",
+        "audioUrl": "https://www.archive.org/download/treasureisland_librivox/treasure_island_33_stevenson_64kb.mp3",
+        "duration": 770
+      },
+      {
+        "title": "Chapter 34",
+        "audioUrl": "https://www.archive.org/download/treasureisland_librivox/treasure_island_34_stevenson_64kb.mp3",
+        "duration": 704
+      }
+    ]
+  },
+  {
+    "slug": "the-time-machine",
+    "title": "The Time Machine",
+    "author": "H. G. Wells",
+    "year": 1895,
+    "genre": "Sci-Fi & Fantasy",
+    "description": "A Victorian inventor hurls himself eight hundred thousand years into the future and finds humanity split into the gentle Eloi and the subterranean Morlocks. The book that popularized time travel.",
+    "coverUrl": "https://covers.openlibrary.org/b/id/9009316-L.jpg",
+    "gutenbergId": 35,
+    "librivoxId": 817,
+    "librivoxUrl": "https://librivox.org/the-time-machine-by-hg-wells/",
+    "totalDuration": 14969,
+    "textMapping": "proportional",
+    "chapters": [
+      {
+        "title": "Chapter 1",
+        "audioUrl": "https://www.archive.org/download/time_machine_0805_librivox/timemachinewells_01_ae_64kb.mp3",
+        "duration": 1172
+      },
+      {
+        "title": "Chapter 1",
+        "audioUrl": "https://www.archive.org/download/time_machine_0805_librivox/timemachinewells_01_tbol3_64kb.mp3",
+        "duration": 1462
+      },
+      {
+        "title": "Chapter 2",
+        "audioUrl": "https://www.archive.org/download/time_machine_0805_librivox/timemachinewells_02_64kb.mp3",
+        "duration": 901
+      },
+      {
+        "title": "Chapter 3",
+        "audioUrl": "https://www.archive.org/download/time_machine_0805_librivox/timemachinewells_03_64kb.mp3",
+        "duration": 1023
+      },
+      {
+        "title": "Chapter 4",
+        "audioUrl": "https://www.archive.org/download/time_machine_0805_librivox/timemachinewells_04_64kb.mp3",
+        "duration": 1906
+      },
+      {
+        "title": "Chapter 5",
+        "audioUrl": "https://www.archive.org/download/time_machine_0805_librivox/timemachinewells_05_64kb.mp3",
+        "duration": 2394
+      },
+      {
+        "title": "Chapter 6",
+        "audioUrl": "https://www.archive.org/download/time_machine_0805_librivox/timemachinewells_06_64kb.mp3",
+        "duration": 776
+      },
+      {
+        "title": "Chapter 7",
+        "audioUrl": "https://www.archive.org/download/time_machine_0805_librivox/timemachinewells_07_64kb.mp3",
+        "duration": 931
+      },
+      {
+        "title": "Chapter 8",
+        "audioUrl": "https://www.archive.org/download/time_machine_0805_librivox/timemachinewells_08_64kb.mp3",
+        "duration": 1026
+      },
+      {
+        "title": "Chapter 9",
+        "audioUrl": "https://www.archive.org/download/time_machine_0805_librivox/timemachinewells_09_64kb.mp3",
+        "duration": 1274
+      },
+      {
+        "title": "Chapter 10",
+        "audioUrl": "https://www.archive.org/download/time_machine_0805_librivox/timemachinewells_10_64kb.mp3",
+        "duration": 458
+      },
+      {
+        "title": "Chapter 11",
+        "audioUrl": "https://www.archive.org/download/time_machine_0805_librivox/timemachinewells_11_64kb.mp3",
+        "duration": 793
+      },
+      {
+        "title": "Chapter 12",
+        "audioUrl": "https://www.archive.org/download/time_machine_0805_librivox/timemachinewells_12__64kb.mp3",
+        "duration": 853
+      }
+    ]
+  },
+  {
+    "slug": "twenty-thousand-leagues",
+    "title": "Twenty Thousand Leagues Under the Sea",
+    "author": "Jules Verne",
+    "year": 1870,
+    "genre": "Sci-Fi & Fantasy",
+    "description": "Aboard the submarine Nautilus, the enigmatic Captain Nemo tours the wonders and terrors of the deep. Verne’s undersea odyssey imagined technology decades before it existed.",
+    "coverUrl": "https://covers.openlibrary.org/b/id/10817535-L.jpg",
+    "gutenbergId": 164,
+    "librivoxId": 665,
+    "librivoxUrl": "https://librivox.org/twenty-thousand-leagues-under-the-sea-by-jules-verne/",
+    "totalDuration": 59409,
+    "textMapping": "proportional",
+    "chapters": [
+      {
+        "title": "A Runaway Reef",
+        "audioUrl": "https://www.archive.org/download/20000_leagues_under_the_seas_librivox/20000leaguesundertheseas_1-01_verne_64kb.mp3",
+        "duration": 1183
+      },
+      {
+        "title": "The Pros and Cons",
+        "audioUrl": "https://www.archive.org/download/20000_leagues_under_the_seas_librivox/20000leaguesundertheseas_1-02_verne_64kb.mp3",
+        "duration": 842
+      },
+      {
+        "title": "As Master Wishes",
+        "audioUrl": "https://www.archive.org/download/20000_leagues_under_the_seas_librivox/20000leaguesundertheseas_1-03_verne_64kb.mp3",
+        "duration": 720
+      },
+      {
+        "title": "Ned Land",
+        "audioUrl": "https://www.archive.org/download/20000_leagues_under_the_seas_librivox/20000leaguesundertheseas_1-04_verne_64kb.mp3",
+        "duration": 1018
+      },
+      {
+        "title": "At Random!",
+        "audioUrl": "https://www.archive.org/download/20000_leagues_under_the_seas_librivox/20000leaguesundertheseas_1-05_verne_64kb.mp3",
+        "duration": 942
+      },
+      {
+        "title": "At Full Steam",
+        "audioUrl": "https://www.archive.org/download/20000_leagues_under_the_seas_librivox/20000leaguesundertheseas_1-06_verne_64kb.mp3",
+        "duration": 1225
+      },
+      {
+        "title": "A Whale of Unknown Species",
+        "audioUrl": "https://www.archive.org/download/20000_leagues_under_the_seas_librivox/20000leaguesundertheseas_1-07_verne_64kb.mp3",
+        "duration": 1163
+      },
+      {
+        "title": "\"Mobilis in Mobili\"",
+        "audioUrl": "https://www.archive.org/download/20000_leagues_under_the_seas_librivox/20000leaguesundertheseas_1-08_verne_64kb.mp3",
+        "duration": 1261
+      },
+      {
+        "title": "The Tantrums of Ned Land",
+        "audioUrl": "https://www.archive.org/download/20000_leagues_under_the_seas_librivox/20000leaguesundertheseas_1-09_verne_64kb.mp3",
+        "duration": 981
+      },
+      {
+        "title": "The Man of the Waters",
+        "audioUrl": "https://www.archive.org/download/20000_leagues_under_the_seas_librivox/20000leaguesundertheseas_1-10_verne_64kb.mp3",
+        "duration": 1258
+      },
+      {
+        "title": "The Nautilus",
+        "audioUrl": "https://www.archive.org/download/20000_leagues_under_the_seas_librivox/20000leaguesundertheseas_1-11_verne_64kb.mp3",
+        "duration": 1239
+      },
+      {
+        "title": "Everything through Electricity",
+        "audioUrl": "https://www.archive.org/download/20000_leagues_under_the_seas_librivox/20000leaguesundertheseas_1-12_verne_64kb.mp3",
+        "duration": 957
+      },
+      {
+        "title": "Some Figures",
+        "audioUrl": "https://www.archive.org/download/20000_leagues_under_the_seas_librivox/20000leaguesundertheseas_1-13_verne_64kb.mp3",
+        "duration": 915
+      },
+      {
+        "title": "The Black Current",
+        "audioUrl": "https://www.archive.org/download/20000_leagues_under_the_seas_librivox/20000leaguesundertheseas_1-14_verne_64kb.mp3",
+        "duration": 1447
+      },
+      {
+        "title": "An Invitation in Writing",
+        "audioUrl": "https://www.archive.org/download/20000_leagues_under_the_seas_librivox/20000leaguesundertheseas_1-15_verne_64kb.mp3",
+        "duration": 1041
+      },
+      {
+        "title": "Strolling the Plains",
+        "audioUrl": "https://www.archive.org/download/20000_leagues_under_the_seas_librivox/20000leaguesundertheseas_1-16_verne_64kb.mp3",
+        "duration": 1047
+      },
+      {
+        "title": "An Underwater Forest",
+        "audioUrl": "https://www.archive.org/download/20000_leagues_under_the_seas_librivox/20000leaguesundertheseas_1-17_verne_64kb.mp3",
+        "duration": 1092
+      },
+      {
+        "title": "Four Thousand Leagues Under the Pacific",
+        "audioUrl": "https://www.archive.org/download/20000_leagues_under_the_seas_librivox/20000leaguesundertheseas_1-18_verne_64kb.mp3",
+        "duration": 1013
+      },
+      {
+        "title": "Vanikoro",
+        "audioUrl": "https://www.archive.org/download/20000_leagues_under_the_seas_librivox/20000leaguesundertheseas_1-19_verne_64kb.mp3",
+        "duration": 1628
+      },
+      {
+        "title": "The Torres Strait",
+        "audioUrl": "https://www.archive.org/download/20000_leagues_under_the_seas_librivox/20000leaguesundertheseas_1-20_verne_64kb.mp3",
+        "duration": 1376
+      },
+      {
+        "title": "Some Days Ashore",
+        "audioUrl": "https://www.archive.org/download/20000_leagues_under_the_seas_librivox/20000leaguesundertheseas_1-21_verne_64kb.mp3",
+        "duration": 1578
+      },
+      {
+        "title": "The Lightning Bolts of Captain Nemo",
+        "audioUrl": "https://www.archive.org/download/20000_leagues_under_the_seas_librivox/20000leaguesundertheseas_1-22_verne_64kb.mp3",
+        "duration": 1400
+      },
+      {
+        "title": "\"Aegri Somnia\"",
+        "audioUrl": "https://www.archive.org/download/20000_leagues_under_the_seas_librivox/20000leaguesundertheseas_1-23_verne_64kb.mp3",
+        "duration": 1097
+      },
+      {
+        "title": "The Coral Realm",
+        "audioUrl": "https://www.archive.org/download/20000_leagues_under_the_seas_librivox/20000leaguesundertheseas_1-24_verne_64kb.mp3",
+        "duration": 1153
+      },
+      {
+        "title": "The Indian Ocean",
+        "audioUrl": "https://www.archive.org/download/20000_leagues_under_the_seas_librivox/20000leaguesundertheseas_2-01_verne_64kb.mp3",
+        "duration": 1453
+      },
+      {
+        "title": "A New Proposition from Captain Nemo",
+        "audioUrl": "https://www.archive.org/download/20000_leagues_under_the_seas_librivox/20000leaguesundertheseas_2-02_verne_64kb.mp3",
+        "duration": 1409
+      },
+      {
+        "title": "A Pearl Worth Ten Million",
+        "audioUrl": "https://www.archive.org/download/20000_leagues_under_the_seas_librivox/20000leaguesundertheseas_2-03_verne_64kb.mp3",
+        "duration": 1480
+      },
+      {
+        "title": "The Red Sea",
+        "audioUrl": "https://www.archive.org/download/20000_leagues_under_the_seas_librivox/20000leaguesundertheseas_2-04_verne_64kb.mp3",
+        "duration": 1794
+      },
+      {
+        "title": "Arabian Tunnel",
+        "audioUrl": "https://www.archive.org/download/20000_leagues_under_the_seas_librivox/20000leaguesundertheseas_2-05_verne_64kb.mp3",
+        "duration": 1016
+      },
+      {
+        "title": "The Greek Islands",
+        "audioUrl": "https://www.archive.org/download/20000_leagues_under_the_seas_librivox/20000leaguesundertheseas_2-06_verne_64kb.mp3",
+        "duration": 1319
+      },
+      {
+        "title": "The Mediterranean in Forty-Eight Hours",
+        "audioUrl": "https://www.archive.org/download/20000_leagues_under_the_seas_librivox/20000leaguesundertheseas_2-07_verne_64kb.mp3",
+        "duration": 1288
+      },
+      {
+        "title": "The Bay of Vigo",
+        "audioUrl": "https://www.archive.org/download/20000_leagues_under_the_seas_librivox/20000leaguesundertheseas_2-08_verne_64kb.mp3",
+        "duration": 1455
+      },
+      {
+        "title": "A Lost Continent",
+        "audioUrl": "https://www.archive.org/download/20000_leagues_under_the_seas_librivox/20000leaguesundertheseas_2-09_verne_64kb.mp3",
+        "duration": 1353
+      },
+      {
+        "title": "The Underwater Coalfields",
+        "audioUrl": "https://www.archive.org/download/20000_leagues_under_the_seas_librivox/20000leaguesundertheseas_2-10_verne_64kb.mp3",
+        "duration": 1651
+      },
+      {
+        "title": "The Sargasso Sea",
+        "audioUrl": "https://www.archive.org/download/20000_leagues_under_the_seas_librivox/20000leaguesundertheseas_2-11_verne_64kb.mp3",
+        "duration": 1394
+      },
+      {
+        "title": "Sperm Whales and Baleen Whales",
+        "audioUrl": "https://www.archive.org/download/20000_leagues_under_the_seas_librivox/20000leaguesundertheseas_2-12_verne_64kb.mp3",
+        "duration": 1504
+      },
+      {
+        "title": "The Ice Bank",
+        "audioUrl": "https://www.archive.org/download/20000_leagues_under_the_seas_librivox/20000leaguesundertheseas_2-13_verne_64kb.mp3",
+        "duration": 1719
+      },
+      {
+        "title": "The South Pole",
+        "audioUrl": "https://www.archive.org/download/20000_leagues_under_the_seas_librivox/20000leaguesundertheseas_2-14_verne_64kb.mp3",
+        "duration": 1782
+      },
+      {
+        "title": "Accident or Incident?",
+        "audioUrl": "https://www.archive.org/download/20000_leagues_under_the_seas_librivox/20000leaguesundertheseas_2-15_verne_64kb.mp3",
+        "duration": 1053
+      },
+      {
+        "title": "Shortage of Air",
+        "audioUrl": "https://www.archive.org/download/20000_leagues_under_the_seas_librivox/20000leaguesundertheseas_2-16_verne_64kb.mp3",
+        "duration": 1387
+      },
+      {
+        "title": "From Cape Horn to the Amazon",
+        "audioUrl": "https://www.archive.org/download/20000_leagues_under_the_seas_librivox/20000leaguesundertheseas_2-17_verne_64kb.mp3",
+        "duration": 1522
+      },
+      {
+        "title": "The Devilfish",
+        "audioUrl": "https://www.archive.org/download/20000_leagues_under_the_seas_librivox/20000leaguesundertheseas_2-18_verne_64kb.mp3",
+        "duration": 1601
+      },
+      {
+        "title": "The Gulf Stream",
+        "audioUrl": "https://www.archive.org/download/20000_leagues_under_the_seas_librivox/20000leaguesundertheseas_2-19_verne_64kb.mp3",
+        "duration": 1578
+      },
+      {
+        "title": "In Latitude 47 degrees 24' and Longitude 17 degrees 28'",
+        "audioUrl": "https://www.archive.org/download/20000_leagues_under_the_seas_librivox/20000leaguesundertheseas_2-20_verne_64kb.mp3",
+        "duration": 1424
+      },
+      {
+        "title": "A Mass Execution",
+        "audioUrl": "https://www.archive.org/download/20000_leagues_under_the_seas_librivox/20000leaguesundertheseas_2-21_verne_64kb.mp3",
+        "duration": 1301
+      },
+      {
+        "title": "The Last Words of Captain Nemo",
+        "audioUrl": "https://www.archive.org/download/20000_leagues_under_the_seas_librivox/20000leaguesundertheseas_2-22_verne_64kb.mp3",
+        "duration": 1090
+      },
+      {
+        "title": "Conclusion",
+        "audioUrl": "https://www.archive.org/download/20000_leagues_under_the_seas_librivox/20000leaguesundertheseas_2-23_verne_64kb.mp3",
+        "duration": 260
+      }
+    ]
+  },
+  {
+    "slug": "alice-in-wonderland",
+    "title": "Alice's Adventures in Wonderland",
+    "author": "Lewis Carroll",
+    "year": 1865,
+    "genre": "Sci-Fi & Fantasy",
+    "description": "Down the rabbit hole, logic bends: a grinning cat, a mad tea party, a queen who shouts “Off with their heads!” Carroll’s dream-logic classic delights at any age.",
+    "coverUrl": "https://covers.openlibrary.org/b/id/10527843-L.jpg",
+    "gutenbergId": 11,
+    "librivoxId": 200,
+    "librivoxUrl": "https://librivox.org/alices-adventures-in-wonderland-by-lewis-carroll/",
+    "totalDuration": 10759,
+    "textMapping": "exact",
+    "chapters": [
+      {
+        "title": "Chapter 1",
+        "audioUrl": "https://www.archive.org/download/alice_in_wonderland_librivox/wonderland_ch_01_64kb.mp3",
+        "duration": 640
+      },
+      {
+        "title": "Chapter 2",
+        "audioUrl": "https://www.archive.org/download/alice_in_wonderland_librivox/wonderland_ch_02_64kb.mp3",
+        "duration": 735
+      },
+      {
+        "title": "Chapter 3",
+        "audioUrl": "https://www.archive.org/download/alice_in_wonderland_librivox/wonderland_ch_03_64kb.mp3",
+        "duration": 1063
+      },
+      {
+        "title": "Chapter 4",
+        "audioUrl": "https://www.archive.org/download/alice_in_wonderland_librivox/wonderland_ch_04_64kb.mp3",
+        "duration": 1192
+      },
+      {
+        "title": "Chapter 5",
+        "audioUrl": "https://www.archive.org/download/alice_in_wonderland_librivox/wonderland_ch_05_64kb.mp3",
+        "duration": 809
+      },
+      {
+        "title": "Chapter 6",
+        "audioUrl": "https://www.archive.org/download/alice_in_wonderland_librivox/wonderland_ch_06_64kb.mp3",
+        "duration": 809
+      },
+      {
+        "title": "Chapter 7",
+        "audioUrl": "https://www.archive.org/download/alice_in_wonderland_librivox/wonderland_ch_07_64kb.mp3",
+        "duration": 1046
+      },
+      {
+        "title": "Chapter 8",
+        "audioUrl": "https://www.archive.org/download/alice_in_wonderland_librivox/wonderland_ch_08_64kb.mp3",
+        "duration": 798
+      },
+      {
+        "title": "Chapter 9",
+        "audioUrl": "https://www.archive.org/download/alice_in_wonderland_librivox/wonderland_ch_09_64kb.mp3",
+        "duration": 908
+      },
+      {
+        "title": "Chapter 10",
+        "audioUrl": "https://www.archive.org/download/alice_in_wonderland_librivox/wonderland_ch_10_64kb.mp3",
+        "duration": 1368
+      },
+      {
+        "title": "Chapter 11",
+        "audioUrl": "https://www.archive.org/download/alice_in_wonderland_librivox/wonderland_ch_11_64kb.mp3",
+        "duration": 619
+      },
+      {
+        "title": "Chapter 12",
+        "audioUrl": "https://www.archive.org/download/alice_in_wonderland_librivox/wonderland_ch_12_64kb.mp3",
+        "duration": 772
+      }
+    ]
+  },
+  {
+    "slug": "meditations",
+    "title": "Meditations",
+    "author": "Marcus Aurelius",
+    "year": 180,
+    "genre": "Philosophy",
+    "description": "The private notebook of a Roman emperor, never meant for publication. Two thousand years later, its Stoic counsel on anger, mortality, and duty still reads like advice from a wise friend.",
+    "coverUrl": "https://covers.openlibrary.org/b/id/211529-L.jpg",
+    "gutenbergId": 2680,
+    "librivoxId": 1095,
+    "librivoxUrl": "https://librivox.org/the-meditations-of-marcus-aurelius/",
+    "totalDuration": 25160,
+    "textMapping": "proportional",
+    "chapters": [
+      {
+        "title": "Introduction",
+        "audioUrl": "https://www.archive.org/download/meditations_0708_librivox/meditations_00_marcusaurelius_64kb.mp3",
+        "duration": 167
+      },
+      {
+        "title": "Chapter 1",
+        "audioUrl": "https://www.archive.org/download/meditations_0708_librivox/meditations_01_marcusaurelius_64kb.mp3",
+        "duration": 985
+      },
+      {
+        "title": "Chapter 2",
+        "audioUrl": "https://www.archive.org/download/meditations_0708_librivox/meditations_02_marcusaurelius_64kb.mp3",
+        "duration": 829
+      },
+      {
+        "title": "Chapter 3",
+        "audioUrl": "https://www.archive.org/download/meditations_0708_librivox/meditations_03_marcusaurelius_64kb.mp3",
+        "duration": 1060
+      },
+      {
+        "title": "Chapter 4",
+        "audioUrl": "https://www.archive.org/download/meditations_0708_librivox/meditations_04_marcusaurelius_64kb.mp3",
+        "duration": 1725
+      },
+      {
+        "title": "Chapter 5",
+        "audioUrl": "https://www.archive.org/download/meditations_0708_librivox/meditations_05_marcusaurelius_64kb.mp3",
+        "duration": 1956
+      },
+      {
+        "title": "Chapter 6",
+        "audioUrl": "https://www.archive.org/download/meditations_0708_librivox/meditations_06_marcusaurelius_64kb.mp3",
+        "duration": 1663
+      },
+      {
+        "title": "Chapter 7",
+        "audioUrl": "https://www.archive.org/download/meditations_0708_librivox/meditations_07_marcusaurelius_64kb.mp3",
+        "duration": 1957
+      },
+      {
+        "title": "Chapter 8",
+        "audioUrl": "https://www.archive.org/download/meditations_0708_librivox/meditations_08_marcusaurelius_64kb.mp3",
+        "duration": 2159
+      },
+      {
+        "title": "Chapter 9",
+        "audioUrl": "https://www.archive.org/download/meditations_0708_librivox/meditations_09_marcusaurelius_64kb.mp3",
+        "duration": 1969
+      },
+      {
+        "title": "Chapter 10",
+        "audioUrl": "https://www.archive.org/download/meditations_0708_librivox/meditations_10_marcusaurelius_64kb.mp3",
+        "duration": 1716
+      },
+      {
+        "title": "Chapter 11",
+        "audioUrl": "https://www.archive.org/download/meditations_0708_librivox/meditations_11_marcusaurelius_64kb.mp3",
+        "duration": 1543
+      },
+      {
+        "title": "Chapter 12",
+        "audioUrl": "https://www.archive.org/download/meditations_0708_librivox/meditations_12_marcusaurelius_64kb.mp3",
+        "duration": 1372
+      },
+      {
+        "title": "M. Aurelius Antoninus",
+        "audioUrl": "https://www.archive.org/download/meditations_0708_librivox/meditations_13_marcusaurelius_64kb.mp3",
+        "duration": 2575
+      },
+      {
+        "title": "The Philosophy of Marcus Aurelius",
+        "audioUrl": "https://www.archive.org/download/meditations_0708_librivox/meditations_14_marcusaurelius_64kb.mp3",
+        "duration": 3484
+      }
+    ]
+  },
+  {
+    "slug": "the-art-of-war",
+    "title": "The Art of War",
+    "author": "Sun Tzu",
+    "year": -500,
+    "genre": "Philosophy",
+    "description": "Thirteen chapters on strategy, deception, and knowing when not to fight, written in China two and a half millennia ago. Still assigned in boardrooms and war colleges alike.",
+    "coverUrl": "https://covers.openlibrary.org/b/id/4849549-L.jpg",
+    "gutenbergId": 132,
+    "librivoxId": 119,
+    "librivoxUrl": "https://librivox.org/the-art-of-war-by-sun-tzu/",
+    "totalDuration": 4334,
+    "textMapping": "proportional",
+    "chapters": [
+      {
+        "title": "Laying Plans / 02 - Waging War",
+        "audioUrl": "https://www.archive.org/download/art_of_war_librivox/art_of_war_01-02_sun_tzu_64kb.mp3",
+        "duration": 506
+      },
+      {
+        "title": "Attack By Stratagem / 04 - Tactical Dispositions",
+        "audioUrl": "https://www.archive.org/download/art_of_war_librivox/art_of_war_03-04_sun_tzu_64kb.mp3",
+        "duration": 465
+      },
+      {
+        "title": "Energy / 06 - Weak Points and Strong",
+        "audioUrl": "https://www.archive.org/download/art_of_war_librivox/art_of_war_05-06_sun_tzu_64kb.mp3",
+        "duration": 636
+      },
+      {
+        "title": "Maneuvering / 08 - Variation in Tactics",
+        "audioUrl": "https://www.archive.org/download/art_of_war_librivox/art_of_war_07-08_sun_tzu_64kb.mp3",
+        "duration": 530
+      },
+      {
+        "title": "The Army on the March / 10 - Terrain",
+        "audioUrl": "https://www.archive.org/download/art_of_war_librivox/art_of_war_09-10_sun_tzu_64kb.mp3",
+        "duration": 882
+      },
+      {
+        "title": "The Nine Situations",
+        "audioUrl": "https://www.archive.org/download/art_of_war_librivox/art_of_war_11_sun_tzu_64kb.mp3",
+        "duration": 776
+      },
+      {
+        "title": "The Attack By Fire / 13 - The Use of Spies",
+        "audioUrl": "https://www.archive.org/download/art_of_war_librivox/art_of_war_12-13_sun_tzu_64kb.mp3",
+        "duration": 539
+      }
+    ]
+  },
+  {
+    "slug": "walden",
+    "title": "Walden",
+    "author": "Henry David Thoreau",
+    "year": 1854,
+    "genre": "Philosophy",
+    "description": "Two years in a cabin by a pond, recorded by a man determined to “live deliberately.” Thoreau’s experiment in simplicity is part memoir, part manifesto, part field notebook.",
+    "coverUrl": "https://covers.openlibrary.org/b/id/11248037-L.jpg",
+    "gutenbergId": 205,
+    "librivoxId": 549,
+    "librivoxUrl": "https://librivox.org/walden-by-henry-david-thoreau/",
+    "totalDuration": 51472,
+    "textMapping": "proportional",
+    "chapters": [
+      {
+        "title": "Chapter 1, Part 1",
+        "audioUrl": "https://www.archive.org/download/walden_librivox/walden_c01_p01_64kb.mp3",
+        "duration": 1816
+      },
+      {
+        "title": "Chapter 1, Part 2",
+        "audioUrl": "https://www.archive.org/download/walden_librivox/walden_c01_p02_64kb.mp3",
+        "duration": 2315
+      },
+      {
+        "title": "Chapter 1, Part 3",
+        "audioUrl": "https://www.archive.org/download/walden_librivox/walden_c01_p03_64kb.mp3",
+        "duration": 3538
+      },
+      {
+        "title": "Chapter 1, Part 4",
+        "audioUrl": "https://www.archive.org/download/walden_librivox/walden_c01_p04_64kb.mp3",
+        "duration": 2785
+      },
+      {
+        "title": "Chapter 1, Part 5",
+        "audioUrl": "https://www.archive.org/download/walden_librivox/walden_c01_p05_64kb.mp3",
+        "duration": 1406
+      },
+      {
+        "title": "Chapter 2, Part 1",
+        "audioUrl": "https://www.archive.org/download/walden_librivox/walden_c02_p01_64kb.mp3",
+        "duration": 1638
+      },
+      {
+        "title": "Chapter 2, Part 2",
+        "audioUrl": "https://www.archive.org/download/walden_librivox/walden_c02_p02_64kb.mp3",
+        "duration": 1550
+      },
+      {
+        "title": "Chapter 3",
+        "audioUrl": "https://www.archive.org/download/walden_librivox/walden_c03_64kb.mp3",
+        "duration": 2153
+      },
+      {
+        "title": "Chapter 4",
+        "audioUrl": "https://www.archive.org/download/walden_librivox/walden_c04_64kb.mp3",
+        "duration": 3024
+      },
+      {
+        "title": "Chapter 5",
+        "audioUrl": "https://www.archive.org/download/walden_librivox/walden_c05_64kb.mp3",
+        "duration": 1917
+      },
+      {
+        "title": "Chapter 6",
+        "audioUrl": "https://www.archive.org/download/walden_librivox/walden_c06_64kb.mp3",
+        "duration": 2005
+      },
+      {
+        "title": "Chapter 7",
+        "audioUrl": "https://www.archive.org/download/walden_librivox/walden_c07_64kb.mp3",
+        "duration": 1817
+      },
+      {
+        "title": "Chapter 8",
+        "audioUrl": "https://www.archive.org/download/walden_librivox/walden_c08_64kb.mp3",
+        "duration": 849
+      },
+      {
+        "title": "Chapter 9",
+        "audioUrl": "https://www.archive.org/download/walden_librivox/walden_c09_64kb.mp3",
+        "duration": 4389
+      },
+      {
+        "title": "Chapter 10",
+        "audioUrl": "https://www.archive.org/download/walden_librivox/walden_c10_64kb.mp3",
+        "duration": 1339
+      },
+      {
+        "title": "Chapter 11",
+        "audioUrl": "https://www.archive.org/download/walden_librivox/walden_c11_64kb.mp3",
+        "duration": 2186
+      },
+      {
+        "title": "Chapter 12",
+        "audioUrl": "https://www.archive.org/download/walden_librivox/walden_c12_64kb.mp3",
+        "duration": 2211
+      },
+      {
+        "title": "Chapter 13",
+        "audioUrl": "https://www.archive.org/download/walden_librivox/walden_c13_64kb.mp3",
+        "duration": 2589
+      },
+      {
+        "title": "Chapter 14",
+        "audioUrl": "https://www.archive.org/download/walden_librivox/walden_c14_64kb.mp3",
+        "duration": 2354
+      },
+      {
+        "title": "Chapter 15",
+        "audioUrl": "https://www.archive.org/download/walden_librivox/walden_c15_64kb.mp3",
+        "duration": 1624
+      },
+      {
+        "title": "Chapter 16",
+        "audioUrl": "https://www.archive.org/download/walden_librivox/walden_c16_64kb.mp3",
+        "duration": 2292
+      },
+      {
+        "title": "Chapter 17",
+        "audioUrl": "https://www.archive.org/download/walden_librivox/walden_c17_64kb.mp3",
+        "duration": 3360
+      },
+      {
+        "title": "Chapter 18",
+        "audioUrl": "https://www.archive.org/download/walden_librivox/walden_c18_64kb.mp3",
+        "duration": 2315
+      }
+    ]
+  },
+  {
+    "slug": "metamorphosis",
+    "title": "Metamorphosis",
+    "author": "Franz Kafka",
+    "year": 1915,
+    "genre": "Novellas",
+    "description": "Gregor Samsa wakes from uneasy dreams to find himself transformed into a monstrous insect — and his family transformed with him. Kafka’s novella of alienation, told with terrible calm.",
+    "coverUrl": "https://covers.openlibrary.org/b/id/12820198-L.jpg",
+    "gutenbergId": 5200,
+    "librivoxId": 527,
+    "librivoxUrl": "https://librivox.org/the-metamorphosis-by-franz-kafka/",
+    "totalDuration": 9265,
+    "textMapping": "exact",
+    "chapters": [
+      {
+        "title": "I",
+        "audioUrl": "https://www.archive.org/download/metamorphosis_librivox/metamorphosis_1_kafka_64kb.mp3",
+        "duration": 2992
+      },
+      {
+        "title": "II",
+        "audioUrl": "https://www.archive.org/download/metamorphosis_librivox/metamorphosis_2_kafka_64kb.mp3",
+        "duration": 3231
+      },
+      {
+        "title": "III",
+        "audioUrl": "https://www.archive.org/download/metamorphosis_librivox/metamorphosis_3_kafka_64kb.mp3",
+        "duration": 3042
+      }
+    ]
+  },
+  {
+    "slug": "dorian-gray",
+    "title": "The Picture of Dorian Gray",
+    "author": "Oscar Wilde",
+    "year": 1890,
+    "genre": "Novellas",
+    "description": "A beautiful young man keeps his youth while his portrait ages and corrupts in the attic. Wilde’s only novel is gothic horror delivered in flawless epigrams.",
+    "coverUrl": "https://covers.openlibrary.org/b/id/14314858-L.jpg",
+    "gutenbergId": 174,
+    "librivoxId": 365,
+    "librivoxUrl": "https://librivox.org/the-picture-of-dorian-gray-by-oscar-wilde/",
+    "totalDuration": 23144,
+    "textMapping": "proportional",
+    "chapters": [
+      {
+        "title": "Chapter 01",
+        "audioUrl": "https://www.archive.org/download/dorian_gray_librivox/picture_of_dorian_grey_01_wilde_64kb.mp3",
+        "duration": 2264
+      },
+      {
+        "title": "Chapter 02",
+        "audioUrl": "https://www.archive.org/download/dorian_gray_librivox/picture_of_dorian_grey_02_wilde_64kb.mp3",
+        "duration": 2304
+      },
+      {
+        "title": "Chapter 03",
+        "audioUrl": "https://www.archive.org/download/dorian_gray_librivox/picture_of_dorian_grey_03_wilde_64kb.mp3",
+        "duration": 2248
+      },
+      {
+        "title": "Chapter 04",
+        "audioUrl": "https://www.archive.org/download/dorian_gray_librivox/picture_of_dorian_grey_04_wilde_64kb.mp3",
+        "duration": 933
+      },
+      {
+        "title": "Chapter 05",
+        "audioUrl": "https://www.archive.org/download/dorian_gray_librivox/picture_of_dorian_grey_05_wilde_64kb.mp3",
+        "duration": 1662
+      },
+      {
+        "title": "Chapter 06",
+        "audioUrl": "https://www.archive.org/download/dorian_gray_librivox/picture_of_dorian_grey_06_wilde_64kb.mp3",
+        "duration": 2207
+      },
+      {
+        "title": "Chapter 07",
+        "audioUrl": "https://www.archive.org/download/dorian_gray_librivox/picture_of_dorian_grey_07_wilde_64kb.mp3",
+        "duration": 1501
+      },
+      {
+        "title": "Chapter 08",
+        "audioUrl": "https://www.archive.org/download/dorian_gray_librivox/picture_of_dorian_grey_08_wilde_64kb.mp3",
+        "duration": 1358
+      },
+      {
+        "title": "Chapter 09",
+        "audioUrl": "https://www.archive.org/download/dorian_gray_librivox/picture_of_dorian_grey_09_wilde_64kb.mp3",
+        "duration": 3119
+      },
+      {
+        "title": "Chapter 10",
+        "audioUrl": "https://www.archive.org/download/dorian_gray_librivox/picture_of_dorian_grey_10_wilde_64kb.mp3",
+        "duration": 990
+      },
+      {
+        "title": "Chapter 11",
+        "audioUrl": "https://www.archive.org/download/dorian_gray_librivox/picture_of_dorian_grey_11_wilde_64kb.mp3",
+        "duration": 1004
+      },
+      {
+        "title": "Chapter 12",
+        "audioUrl": "https://www.archive.org/download/dorian_gray_librivox/picture_of_dorian_grey_12_wilde_64kb.mp3",
+        "duration": 1827
+      },
+      {
+        "title": "Chapter 13",
+        "audioUrl": "https://www.archive.org/download/dorian_gray_librivox/picture_of_dorian_grey_13_wilde_64kb.mp3",
+        "duration": 1727
+      }
+    ]
+  },
+  {
+    "slug": "heart-of-darkness",
+    "title": "Heart of Darkness",
+    "author": "Joseph Conrad",
+    "year": 1899,
+    "genre": "Novellas",
+    "description": "Marlow pilots a steamer up the Congo in search of the ivory trader Kurtz, and finds the emptiness at the heart of empire. A short, dense masterpiece told at dusk on the Thames.",
+    "coverUrl": "https://covers.openlibrary.org/b/id/12307847-L.jpg",
+    "gutenbergId": 219,
+    "librivoxId": 64,
+    "librivoxUrl": "https://librivox.org/heart-of-darkness-by-joseph-conrad",
+    "totalDuration": 15012,
+    "textMapping": "proportional",
+    "chapters": [
+      {
+        "title": "Chapter 1 Part 1",
+        "audioUrl": "https://www.archive.org/download/heart_of_darkness/heart_of_darkness_1a_conrad_64kb.mp3",
+        "duration": 2650
+      },
+      {
+        "title": "Chapter 1 Part 2",
+        "audioUrl": "https://www.archive.org/download/heart_of_darkness/heart_of_darkness_1b_conrad_64kb.mp3",
+        "duration": 2854
+      },
+      {
+        "title": "Chapter 2 Part 1",
+        "audioUrl": "https://www.archive.org/download/heart_of_darkness/heart_of_darkness_2a_conrad_64kb.mp3",
+        "duration": 2213
+      },
+      {
+        "title": "Chapter 2 Part 2",
+        "audioUrl": "https://www.archive.org/download/heart_of_darkness/heart_of_darkness_2b_conrad_64kb.mp3",
+        "duration": 2555
+      },
+      {
+        "title": "Chapter 3 Part 1",
+        "audioUrl": "https://www.archive.org/download/heart_of_darkness/heart_of_darkness_3a_conrad_64kb.mp3",
+        "duration": 1821
+      },
+      {
+        "title": "Chapter 3 Part 2",
+        "audioUrl": "https://www.archive.org/download/heart_of_darkness/heart_of_darkness_3b_conrad_64kb.mp3",
+        "duration": 2919
+      }
+    ]
+  }
+]
