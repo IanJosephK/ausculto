@@ -33,6 +33,7 @@ interface ChapterTextProps {
 }
 
 const NO_HIGHLIGHTS: Highlight[] = [];
+const NO_ITALICS: [number, number][] = [];
 
 const Paragraph = memo(function Paragraph({
   para,
@@ -40,6 +41,7 @@ const Paragraph = memo(function Paragraph({
   pIdx,
   highlights,
   activeRange,
+  italics,
   registerRef,
   flash,
 }: {
@@ -48,13 +50,14 @@ const Paragraph = memo(function Paragraph({
   pIdx: number;
   highlights: Highlight[];
   activeRange: { start: number; end: number } | null;
+  italics: [number, number][];
   registerRef: (idx: number, el: HTMLParagraphElement | null) => void;
   flash: boolean;
 }) {
-  const segments = useMemo(
-    () => segmentParagraph(para, paraStart, highlights, activeRange),
-    [para, paraStart, highlights, activeRange],
-  );
+  const segments = useMemo(() => {
+    const italicRanges = italics.map(([s, e]) => ({ start: paraStart + s, end: paraStart + e }));
+    return segmentParagraph(para, paraStart, highlights, activeRange, italicRanges);
+  }, [para, paraStart, highlights, activeRange, italics]);
   return (
     <p
       ref={(el) => registerRef(pIdx, el)}
@@ -63,21 +66,22 @@ const Paragraph = memo(function Paragraph({
       className={flash ? 'flash-target' : undefined}
     >
       {segments.map((seg, i) => {
+        const content = seg.italic ? <em>{seg.text}</em> : seg.text;
         if (seg.active) {
           return (
             <span key={i} className="active-word">
-              {seg.text}
+              {content}
             </span>
           );
         }
         if (seg.highlightIds.length > 0) {
           return (
             <span key={i} className="hl" data-hid={seg.highlightIds[0]} role="button" tabIndex={0}>
-              {seg.text}
+              {content}
             </span>
           );
         }
-        return <Fragment key={i}>{seg.text}</Fragment>;
+        return <Fragment key={i}>{content}</Fragment>;
       })}
     </p>
   );
@@ -266,6 +270,7 @@ export function ChapterText({
             pIdx={i}
             highlights={highlightsByPara.get(i) ?? NO_HIGHLIGHTS}
             activeRange={activeParagraph === i ? activeRange : null}
+            italics={text.italics?.[i] ?? NO_ITALICS}
             registerRef={registerRef}
             flash={flashPara === i}
           />
