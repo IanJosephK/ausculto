@@ -1,4 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" viewBox="0 0 192 192"><rect width="192" height="192" rx="42" fill="#1C1C1E"/><svg x="32" y="32" width="128" height="128" viewBox="303 150 410 718" preserveAspectRatio="xMidYMid meet"><g transform="translate(0,1024) scale(0.05,-0.05)" fill="#DAC37E" stroke="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="303 150 410 718" width="410" height="718" fill-rule="evenodd">
+  <title>Bird logo</title>
+  <g transform="translate(0,1024) scale(0.05,-0.05)" fill="#DAC37E" stroke="none">
     <path d="M11378 16994 c-4 -3 -51 -10 -105 -15 -121 -11 -231 -25 -303 -39
 -30 -6 -73 -13 -95 -17 -22 -3 -44 -9 -49 -14 -6 -5 -27 -9 -47 -9 -21 0 -41
 -4 -44 -10 -3 -5 -18 -10 -32 -10 -15 0 -40 -4 -57 -9 -33 -10 -96 -27 -226
@@ -333,4 +335,5 @@
 38 22 52 5 14 13 33 18 42 5 10 9 25 9 33 0 8 4 23 9 33 5 9 15 37 22 62 7 25
 16 49 21 55 4 5 8 19 8 31 0 13 5 26 10 29 6 3 10 17 10 30 0 13 4 26 9 29 5
 3 11 20 14 38 3 18 8 43 12 56 11 35 -7 26 -42 -22z"/>
-  </g></svg></svg>
+  </g>
+</svg>
