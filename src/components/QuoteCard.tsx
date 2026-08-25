@@ -9,8 +9,15 @@ interface QuoteCardProps {
   onClose: () => void;
 }
 
-const OWL_BODY =
-  'M64 118 C34 118 20 96 20 66 C20 46 28 32 24 16 C36 26 44 24 64 24 C84 24 92 26 104 16 C100 32 108 46 108 66 C108 96 94 118 64 118 Z';
+/** Load an image so it can be composited onto the canvas. */
+function loadImage(src: string): Promise<HTMLImageElement> {
+  return new Promise((resolve, reject) => {
+    const img = new Image();
+    img.onload = () => resolve(img);
+    img.onerror = reject;
+    img.src = src;
+  });
+}
 
 /** Render the quote card to a canvas (1080×1350, share-friendly). */
 async function renderQuoteImage(book: Book, quote: string): Promise<Blob | null> {
@@ -70,35 +77,20 @@ async function renderQuoteImage(book: Book, quote: string): Promise<Blob | null>
   ctx.fillStyle = '#8E8E93';
   ctx.fillText(book.author, 120, H - 158);
 
-  // Brand mark
-  ctx.save();
-  ctx.translate(W - 220, H - 250);
-  ctx.scale(0.9, 0.9);
-  ctx.fillStyle = '#2C2C2E';
-  ctx.fill(new Path2D(OWL_BODY));
-  ctx.fillStyle = '#F5F0E8';
-  circle(ctx, 46, 60, 17);
-  circle(ctx, 82, 60, 17);
-  ctx.fillStyle = '#B8963E';
-  circle(ctx, 46, 60, 8.5);
-  circle(ctx, 82, 60, 8.5);
-  ctx.fillStyle = '#1C1C1E';
-  circle(ctx, 46, 60, 3.5);
-  circle(ctx, 82, 60, 3.5);
-  ctx.fillStyle = '#B8963E';
-  ctx.fill(new Path2D('M64 74 L57 83 L64 94 L71 83 Z'));
-  ctx.restore();
+  // Brand mark — the Ausculto bird logo, gold on the dark card
+  try {
+    const logo = await loadImage('/ausculto-logo.svg');
+    ctx.drawImage(logo, W - 205, H - 252, 66, 116);
+  } catch {
+    /* logo failed to load — omit the mark rather than fail the whole render */
+  }
   ctx.font = '400 26px -apple-system, "Segoe UI", sans-serif';
   ctx.fillStyle = '#8E8E93';
-  ctx.fillText('Ausculto', W - 226, H - 108);
+  ctx.textAlign = 'center';
+  ctx.fillText('Ausculto', W - 172, H - 100);
+  ctx.textAlign = 'left';
 
   return new Promise((resolve) => canvas.toBlob(resolve, 'image/png'));
-}
-
-function circle(ctx: CanvasRenderingContext2D, x: number, y: number, r: number) {
-  ctx.beginPath();
-  ctx.arc(x, y, r, 0, Math.PI * 2);
-  ctx.fill();
 }
 
 function wrapText(ctx: CanvasRenderingContext2D, text: string, maxWidth: number): string[] {

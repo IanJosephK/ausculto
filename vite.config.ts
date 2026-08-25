@@ -7,7 +7,7 @@ export default defineConfig({
     react(),
     VitePWA({
       registerType: 'autoUpdate',
-      includeAssets: ['favicon.svg', 'icons/owl-192.svg', 'icons/owl-512.svg'],
+      includeAssets: ['ausculto-logo.svg', 'icons/owl-192.svg', 'icons/owl-512.svg'],
       manifest: {
         name: 'Ausculto',
         short_name: 'Ausculto',
