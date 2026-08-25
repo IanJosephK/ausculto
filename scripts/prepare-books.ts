@@ -18,6 +18,7 @@
 import { mkdir, writeFile } from 'node:fs/promises';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { parseItalics } from './italics';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 
@@ -591,9 +592,17 @@ async function processBook(book: CuratedBook): Promise<GeneratedBook | undefined
   await mkdir(bookDir, { recursive: true });
   for (let i = 0; i < sections.length; i++) {
     const text = chapterTexts[i] ?? { title: sections[i].title, paragraphs: [] };
+    // Move Gutenberg underscore-italics out of the text into char ranges.
+    const paragraphs: string[] = [];
+    const italics: [number, number][][] = [];
+    for (const para of text.paragraphs) {
+      const parsed = parseItalics(para);
+      paragraphs.push(parsed.text);
+      italics.push(parsed.italics);
+    }
     await writeFile(
       join(bookDir, `${i}.json`),
-      JSON.stringify({ title: sections[i].title, paragraphs: text.paragraphs }),
+      JSON.stringify({ title: sections[i].title, paragraphs, italics }),
       'utf-8',
     );
   }

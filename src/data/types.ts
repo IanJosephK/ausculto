@@ -27,6 +27,12 @@ export interface Book {
 export interface ChapterText {
   title: string;
   paragraphs: string[];
+  /**
+   * Italic char ranges per paragraph, [start, end] into each clean paragraph
+   * string (Gutenberg underscore-emphasis, re-applied as <em> at render).
+   * Aligned by index with `paragraphs`; absent on pre-migration data.
+   */
+  italics?: [number, number][][];
 }
 
 /** One aligned word from src/data/alignments/{slug}/{index}.json */

@@ -41,28 +41,37 @@ export interface Segment {
   highlightIds: string[];
   /** true when this segment is the currently spoken word */
   active: boolean;
+  /** true when this segment falls inside an italic range */
+  italic: boolean;
 }
 
 /**
- * Split one paragraph into render segments given the highlight ranges and the
- * active-word range that intersect it. Offsets are chapter-relative.
+ * Split one paragraph into render segments given the highlight ranges, the
+ * active-word range, and the italic ranges that intersect it. All offsets are
+ * chapter-relative.
  */
 export function segmentParagraph(
   para: string,
   paraStart: number,
   highlights: { id: string; startOffset: number; endOffset: number }[],
   activeRange: { start: number; end: number } | null,
+  italicRanges: { start: number; end: number }[] = [],
 ): Segment[] {
   const paraEnd = paraStart + para.length;
   // Collect boundary points within this paragraph
   const cuts = new Set<number>([paraStart, paraEnd]);
+  const addCut = (n: number) => cuts.add(Math.max(paraStart, Math.min(paraEnd, n)));
   for (const h of highlights) {
-    cuts.add(Math.max(paraStart, Math.min(paraEnd, h.startOffset)));
-    cuts.add(Math.max(paraStart, Math.min(paraEnd, h.endOffset)));
+    addCut(h.startOffset);
+    addCut(h.endOffset);
   }
   if (activeRange) {
-    cuts.add(Math.max(paraStart, Math.min(paraEnd, activeRange.start)));
-    cuts.add(Math.max(paraStart, Math.min(paraEnd, activeRange.end)));
+    addCut(activeRange.start);
+    addCut(activeRange.end);
+  }
+  for (const r of italicRanges) {
+    addCut(r.start);
+    addCut(r.end);
   }
   const points = [...cuts].sort((a, b) => a - b);
 
@@ -75,6 +84,7 @@ export function segmentParagraph(
       text: para.slice(start - paraStart, end - paraStart),
       highlightIds: highlights.filter((h) => h.startOffset < end && h.endOffset > start).map((h) => h.id),
       active: activeRange !== null && activeRange.start < end && activeRange.end > start,
+      italic: italicRanges.some((r) => r.start < end && r.end > start),
     });
   }
   return segments;
