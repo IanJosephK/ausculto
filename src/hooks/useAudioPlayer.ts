@@ -10,6 +10,8 @@ let sharedAudio: HTMLAudioElement | null = null;
 function getAudio(): HTMLAudioElement {
   if (!sharedAudio) {
     sharedAudio = new Audio();
+    // Workbox needs a readable CORS response to serve cached byte ranges.
+    sharedAudio.crossOrigin = 'anonymous';
     sharedAudio.preload = 'metadata';
   }
   return sharedAudio;
@@ -67,6 +69,22 @@ export function useAudioPlayer(book: Book): AudioPlayer {
     }
   }, [book.slug]);
 
+  const play = useCallback(() => {
+    const audio = getAudio();
+    const source = audio.src;
+    if (audio.error) {
+      if (audio.currentTime > 0) pendingPositionRef.current = audio.currentTime;
+      audio.load();
+    }
+    setError(null);
+    void audio.play().catch((cause: unknown) => {
+      // Changing chapters or leaving the reader aborts an outstanding play.
+      if (audio.src !== source || (cause instanceof DOMException && cause.name === 'AbortError')) return;
+      setIsPlaying(false);
+      setError('Playback failed to start. Check your connection and try again.');
+    });
+  }, []);
+
   // Load chapter audio when book/chapter changes
   useEffect(() => {
     const audio = getAudio();
@@ -81,21 +99,23 @@ export function useAudioPlayer(book: Book): AudioPlayer {
 
     // Consumed only once metadata arrives, so an aborted load (or StrictMode
     // remount) doesn't lose the position we meant to restore.
-    const restore = pendingPositionRef.current;
     const onLoadedMetadata = () => {
+      const restore = pendingPositionRef.current;
       if (Number.isFinite(audio.duration)) setDuration(audio.duration);
       if (restore > 1 && restore < audio.duration - 3) audio.currentTime = restore;
+      lastTimeRef.current = audio.currentTime;
+      setCurrentTime(audio.currentTime);
       pendingPositionRef.current = 0;
     };
     audio.addEventListener('loadedmetadata', onLoadedMetadata);
 
     if (autoplayRef.current) {
       autoplayRef.current = false;
-      void audio.play().catch(() => setIsPlaying(false));
+      play();
     }
 
-    lastTimeRef.current = restore;
-    setProgress(book.slug, { chapterIndex, position: restore });
+    lastTimeRef.current = pendingPositionRef.current;
+    setProgress(book.slug, { chapterIndex, position: pendingPositionRef.current });
     precacheChapterAudio(book, chapterIndex + 1);
 
     if ('mediaSession' in navigator) {
@@ -109,13 +129,14 @@ export function useAudioPlayer(book: Book): AudioPlayer {
 
     return () => audio.removeEventListener('loadedmetadata', onLoadedMetadata);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [book.slug, chapterIndex]);
+  }, [book.slug, chapterIndex, play]);
 
   // Wire audio element events once per book
   useEffect(() => {
     const audio = getAudio();
 
     const onTimeUpdate = () => {
+      if (audio.readyState === 0) return;
       const t = audio.currentTime;
       setCurrentTime(t);
       // Accumulate real listening time (ignore seeks: delta must be small)
@@ -136,7 +157,8 @@ export function useAudioPlayer(book: Book): AudioPlayer {
     };
     const onPause = () => {
       setIsPlaying(false);
-      setProgress(book.slug, { chapterIndex: chapterIndexRef.current, position: audio.currentTime });
+      const position = audio.readyState === 0 ? pendingPositionRef.current : audio.currentTime;
+      setProgress(book.slug, { chapterIndex: chapterIndexRef.current, position });
       flushActivity();
     };
     const onEnded = () => {
@@ -166,7 +188,7 @@ export function useAudioPlayer(book: Book): AudioPlayer {
     audio.addEventListener('error', onError);
 
     if ('mediaSession' in navigator) {
-      navigator.mediaSession.setActionHandler('play', () => void audio.play());
+      navigator.mediaSession.setActionHandler('play', play);
       navigator.mediaSession.setActionHandler('pause', () => audio.pause());
       navigator.mediaSession.setActionHandler('seekbackward', () => {
         audio.currentTime = Math.max(0, audio.currentTime - 15);
@@ -202,23 +224,27 @@ export function useAudioPlayer(book: Book): AudioPlayer {
       audio.removeEventListener('error', onError);
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [book.slug]);
+  }, [book.slug, play]);
 
   const toggle = useCallback(() => {
     const audio = getAudio();
-    if (audio.paused) void audio.play().catch(() => setError('Playback failed to start.'));
+    if (audio.paused || audio.error) play();
     else audio.pause();
-  }, []);
+  }, [play]);
 
   const seek = useCallback(
     (time: number) => {
+      if (!Number.isFinite(time)) return;
       const audio = getAudio();
       const clamped = Math.max(0, Math.min(time, audio.duration || duration || 0));
-      audio.currentTime = clamped;
+      if (audio.readyState === 0) pendingPositionRef.current = clamped;
+      else audio.currentTime = clamped;
       lastTimeRef.current = clamped;
       setCurrentTime(clamped);
+      // Paused seeks don't enter the periodic save path, including a seek to 0.
+      setProgress(book.slug, { chapterIndex: chapterIndexRef.current, position: clamped });
     },
-    [duration],
+    [book.slug, duration, setProgress],
   );
 
   const skip = useCallback(

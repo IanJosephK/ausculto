@@ -11,7 +11,7 @@ interface SearchBarProps {
 
 export function SearchBar({ book, onNavigate, onClose }: SearchBarProps) {
   const [query, setQuery] = useState('');
-  const { results, searching, indexing, search, clear } = useBookSearch(book);
+  const { results, searching, indexing, error, search, clear } = useBookSearch(book);
   const debounceRef = useRef<ReturnType<typeof setTimeout>>();
 
   useEffect(() => {
@@ -20,13 +20,16 @@ export function SearchBar({ book, onNavigate, onClose }: SearchBarProps) {
     return () => window.removeEventListener('keydown', onKey);
   }, [onClose]);
 
-  useEffect(() => () => clearTimeout(debounceRef.current), []);
+  useEffect(() => () => {
+    clearTimeout(debounceRef.current);
+    clear();
+  }, [clear]);
 
   const onChange = (value: string) => {
     setQuery(value);
     clearTimeout(debounceRef.current);
+    clear();
     if (value.trim().length < 3) {
-      clear();
       return;
     }
     debounceRef.current = setTimeout(() => void search(value), 250);
@@ -62,10 +65,13 @@ export function SearchBar({ book, onNavigate, onClose }: SearchBarProps) {
         </div>
 
         <div className="max-h-[60vh] overflow-y-auto">
+          {error && (
+            <p role="alert" className="px-4 py-6 text-center text-sm text-red-300">{error}</p>
+          )}
           {indexing && (
             <p className="px-4 py-6 text-center text-sm text-muted">Building search index for this book…</p>
           )}
-          {!indexing && query.trim().length >= 3 && !searching && results.length === 0 && (
+          {!error && !indexing && query.trim().length >= 3 && !searching && results.length === 0 && (
             <p className="px-4 py-6 text-center text-sm text-muted">No passages found for “{query}”.</p>
           )}
           {query.trim().length > 0 && query.trim().length < 3 && (

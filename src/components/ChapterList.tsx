@@ -23,13 +23,16 @@ export function ChapterList({
   const downloaded = useStore((s) => s.downloaded.includes(book.slug));
   const setDownloaded = useStore((s) => s.setDownloaded);
   const [downloading, setDownloading] = useState<{ done: number; total: number } | null>(null);
+  const [downloadError, setDownloadError] = useState<string | null>(null);
 
   const startDownload = async () => {
     if (downloading) return;
+    setDownloadError(null);
     setDownloading({ done: 0, total: book.chapters.length });
     const ok = await downloadBookForOffline(book, (done, total) => setDownloading({ done, total }));
     setDownloading(null);
     if (ok) setDownloaded(book.slug, true);
+    else setDownloadError('Download incomplete. Check your connection and available storage, then try again.');
   };
 
   return (
@@ -64,6 +67,12 @@ export function ChapterList({
           )}
         </button>
       </div>
+
+      {downloadError && (
+        <p role="alert" className="border-b border-edge px-4 py-2 text-xs text-red-300">
+          {downloadError}
+        </p>
+      )}
 
       <ol className="flex-1 overflow-y-auto py-1" aria-label="Chapter list">
         {book.chapters.map((chapter, i) => {
