@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
+    "test": "tsx --test tests/*.test.ts",
     "preview": "vite preview",
     "prepare-books": "tsx scripts/prepare-books.ts",
     "generate-alignments": "tsx scripts/generate-alignments.ts"

@@ -53,15 +53,18 @@ export function useBookSearch(book: Book) {
   const [results, setResults] = useState<SearchResultGroup[]>([]);
   const [searching, setSearching] = useState(false);
   const [indexing, setIndexing] = useState(false);
+  const [error, setError] = useState<string | null>(null);
   const queryIdRef = useRef(0);
 
   const search = useCallback(
     async (query: string) => {
       const id = ++queryIdRef.current;
+      setError(null);
       const trimmed = query.trim();
       if (trimmed.length < 3) {
         setResults([]);
         setSearching(false);
+        setIndexing(false);
         return;
       }
       setSearching(true);
@@ -84,6 +87,11 @@ export function useBookSearch(book: Book) {
           if (group.matches.length < 8) group.matches.push(hit);
         }
         setResults([...groups.values()].sort((a, b) => a.chapterIndex - b.chapterIndex));
+      } catch {
+        if (id === queryIdRef.current) {
+          setResults([]);
+          setError('Search could not load this book. Check your connection and try again.');
+        }
       } finally {
         if (id === queryIdRef.current) {
           setSearching(false);
@@ -98,7 +106,9 @@ export function useBookSearch(book: Book) {
     queryIdRef.current++;
     setResults([]);
     setSearching(false);
+    setIndexing(false);
+    setError(null);
   }, []);
 
-  return { results, searching, indexing, search, clear };
+  return { results, searching, indexing, error, search, clear };
 }

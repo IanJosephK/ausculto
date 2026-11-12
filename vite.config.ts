@@ -69,14 +69,22 @@ export default defineConfig({
             },
           },
           {
-            // Streaming audio — cache what gets played so it replays offline.
-            // Range requests are enabled so seeking works from cache.
+            // Full CORS downloads populate this cache; streamed 206 responses
+            // pass through to the network. Cached audio supports seeking.
             urlPattern: /^https:\/\/.*archive\.org\/.*\.mp3$/i,
             handler: 'CacheFirst',
             options: {
               cacheName: 'ausculto-audio',
+              plugins: [
+                {
+                  // Ignore opaque/partial entries saved by older workers before
+                  // RangeRequestsPlugin tries to slice an unreadable body.
+                  cachedResponseWillBeUsed: async ({ cachedResponse }) =>
+                    cachedResponse?.status === 200 ? cachedResponse : undefined,
+                },
+              ],
               rangeRequests: true,
-              cacheableResponse: { statuses: [0, 200] },
+              cacheableResponse: { statuses: [200] },
               expiration: { maxEntries: 300, maxAgeSeconds: 60 * 60 * 24 * 365 },
             },
           },

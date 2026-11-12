@@ -36,6 +36,7 @@ and social features:
 | --- | --- |
 | `npm run dev` | Dev server |
 | `npm run build` | Type-check + production build (`dist/`) |
+| `npm test` | Run regression tests |
 | `npm run preview` | Serve the production build locally (service worker active) |
 | `npm run prepare-books` | Regenerate book data from LibriVox + Gutenberg |
 | `npm run generate-alignments -- <slug> [n]` | Word-level sync data via Whisper |

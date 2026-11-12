@@ -5,7 +5,15 @@ import type { Book } from './types';
  * Book metadata produced by `npm run prepare-books`. Chapter text is NOT in
  * here — it lives in /public/books/{slug}/{index}.json and is lazy-loaded.
  */
-export const books = generated as Book[];
+export const books: Book[] = (generated as Book[]).map((book) => ({
+  ...book,
+  chapters: book.chapters.map((chapter) => ({
+    ...chapter,
+    // The www host redirects without CORS headers. Playback and offline
+    // downloads must use the same CORS-safe URL and cache key.
+    audioUrl: chapter.audioUrl.replace(/^https:\/\/www\.archive\.org\//i, 'https://archive.org/'),
+  })),
+}));
 
 export const GENRES = [
   'All',
