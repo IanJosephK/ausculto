@@ -1,93 +1,121 @@
-# Adding books to Ausculto
+# Adding and maintaining books
 
-Every book needs two public-domain sources: a **complete LibriVox recording**
-(chapter-by-chapter MP3s) and the **Project Gutenberg plain-text edition**.
-The prep script fetches both and wires them together.
+Book preparation uses reviewed mappings in
+[`scripts/book-mappings.json`](scripts/book-mappings.json), not duration-based
+text estimates. Each entry pins a recording ID, its section IDs/URLs, a text
+edition and SHA-256 hash, and the exact text sections assigned to each chapter.
+The source snapshots in `scripts/book-sources/` make regeneration reproducible
+without network access.
 
-## 1. Add an entry to the curated list
+## Regenerate or check the catalogue
 
-Open [`scripts/prepare-books.ts`](scripts/prepare-books.ts) and add an object
-to the `CURATED` array:
-
-```ts
-{
-  slug: 'wuthering-heights',            // URL-safe, kebab-case, permanent
-  title: 'Wuthering Heights',
-  author: 'Emily Brontë',
-  authorLastName: 'Brontë',             // used to match the LibriVox author
-  year: 1847,
-  genre: 'Fiction',                     // one of the GENRES in src/data/books.ts
-  description: 'Two or three sentences shown on the book page.',
-  gutenbergId: 768,                     // from the gutenberg.org book URL
-  librivoxQuery: 'wuthering heights',   // see below
-},
+```sh
+npm run prepare-books                         # rebuild all books offline
+npm run prepare-books -- pride-and-prejudice   # rebuild one book
+npm run check-books                           # fail if generated files differ
+npm test
+npm run build
+npm run test:browser                          # installed Edge; see below
 ```
 
-**Finding the pieces:**
+`--fetch-sources` explicitly re-downloads pinned source URLs. It rejects a
+changed hash instead of silently accepting a different edition. Review source
+changes, extraction rules, and mappings before updating the hash/snapshot.
+The importer validates every selected book before writing generated text or
+catalogue metadata. Unknown slugs fail. Partial runs preserve other books.
 
-- `gutenbergId` — search [gutenberg.org](https://www.gutenberg.org); the ID is
-  in the URL (`/ebooks/768`). Prefer the plain-text ("Plain Text UTF-8") edition.
-- `librivoxQuery` — the LibriVox API matches **near-exact titles without the
-  leading article** ("The Time Machine" → `time machine`). If a short query
-  404s, use the full title as it appears on librivox.org (e.g.
-  `frankenstein, or the modern prometheus`).
-- If the search heuristic picks the wrong recording (e.g. a dramatic reading),
-  pin the exact one with `librivoxId: 1234` — the ID is in the LibriVox
-  catalog URL or API response.
+## Add a book
 
-## 2. Run the prep script
+1. Select a complete recording and inspect its LibriVox `url_text_source` and
+   translator/edition. A matching title or chapter count is insufficient.
+   Keep the recording ID, individual section IDs, URLs, and measured durations.
+2. Save the complete original source as UTF-8, including source attribution and
+   license information, gzip it into `scripts/book-sources/{slug}.txt.gz`, and
+   record its SHA-256 hash **before compression**. For non-Gutenberg sources,
+   record the source URL and required acknowledgement.
+3. Add an edition-specific extractor to
+   [`scripts/book-text.ts`](scripts/book-text.ts). Distinguish body chapters
+   from contents and book/part containers. Exclude unrecorded editorial
+   material; retain recorded prefaces and epilogues. Validate the expected
+   section identities and complete story coverage.
+4. Add the entry to `book-mappings.json`. `textSections` explicitly identifies
+   which body sections belong to a displayed chapter. `audioParts` lists its
+   recordings in playback order. Group several source chapters when one
+   recording reads them together. Combine sequential recordings of one
+   literary chapter into that chapter's audio parts, rather than estimating
+   paragraph cuts. Alternate readings are excluded from the main sequence.
+5. Set a documented `matchRank` using the policy below. Add regressions for
+   the opening/ending passages and unusual structure, then regenerate and run
+   the checks. Verify audio at chapter starts/ends before treating its wording
+   as fully checked. Structural matching is distinct from word timing.
 
-```bash
-npm run prepare-books -- wuthering-heights
-```
+The initial manifest has an `excludedAudio` list and `legacyCount` because the
+previous catalogue included duplicate readings. Its `legacyIndex` values are
+permanent storage coordinates: **do not renumber them**. New recordings need
+new unused indices. See the compatibility notes below before changing audio.
 
-(Run it with no arguments to regenerate every book.) The script:
+## Home-screen order
 
-1. Finds the LibriVox recording and its per-chapter MP3 URLs.
-2. Downloads the Gutenberg text, strips the license boilerplate, and splits it
-   into chapters.
-3. Writes per-chapter text to `public/books/{slug}/{n}.json` and metadata to
-   `src/data/books.generated.json` (merging with existing books).
-4. Looks up a cover on Open Library (falls back to a typographic card).
+The catalogue is sorted by descending `matchRank`; genre and title filters
+retain that order. Ranks express structural match quality, not a percentage of
+word accuracy:
 
-**Read the console output.** The key line is the text mapping:
+| Rank | Current basis |
+| --- | --- |
+| 110 | Alice in Wonderland: direct, complete match and preferred first demonstration |
+| 100 | Direct chapter pairs with matching source structure |
+| 90 | Exact chapter ranges grouped into single recordings |
+| 85 | Direct pairs with historical editions, text variants, or additional footnotes |
+| 80 | Whole chapters played across several recordings |
+| 70 | Meditations: corrected Long translation, with source variants/supplementary essays |
 
-- `exact` — Gutenberg headings matched the recording's section count 1:1.
-  Ideal; nothing to do.
-- `proportional` — heading detection didn't line up, so text was distributed
-  across chapters by audio playtime. Usually acceptable, but skim a few
-  chapters in the app. If a book maps badly, try pinning a different
-  `librivoxId` whose section count matches the text's chapter count, or extend
-  `HEADING_PATTERNS` in the script for that book's heading style.
+Ties retain curated order. Reassess rank when source or boundary validation
+improves; do not raise it merely because section counts agree. Continue
+reading remains ordered by the reader's recent activity.
 
-## 3. (Optional) Word-level sync
+## Existing users and offline text
 
-```bash
-npm run generate-alignments -- wuthering-heights 0
-```
+Preparation generates a content-based `textRevision`. The loader and offline
+downloader use `/books/{slug}/{n}.json?v={textRevision}`, so the service worker
+does not serve an old edition from its year-long text cache. Saved downloads
+are considered ready only for the current revision; cached audio can be reused
+when the reader refreshes a download.
 
-Requires the [Whisper CLI](https://github.com/openai/whisper) (`pip install
-openai-whisper`) and ffmpeg. This writes
-`src/data/alignments/{slug}/{n}.json`; the reader picks the file up
-automatically and highlights each word as it is spoken. Chapters without
-alignment data fall back to chapter-level sync — never required.
+Guest and Supabase progress/bookmarks retain original recording coordinates.
+[`bookMapping.ts`](src/lib/bookMapping.ts) translates them into current
+chapters and cumulative multipart times, and back on save. This avoids a
+database migration and keeps old clients' stored coordinates meaningful.
+Positions in an excluded alternate reading map proportionally into the chosen
+reading of the same chapter; an unmatched introductory track maps to the start
+of the book. New deep links carry the text revision; older chapter-index links
+are interpreted using the legacy map.
 
-Only generate alignments for books with `"textMapping": "exact"`; the app maps
-the Nth aligned word to the Nth word of the chapter text, so approximate text
-splits will drift.
+Saved highlights are checked against the current text and, when necessary,
+located by their excerpt across the book. A missing or ambiguous excerpt keeps
+its saved text and note in My Library but is not painted onto unrelated prose.
+No stored annotations are deleted during migration.
 
-## 4. Verify
+## Browser checks
 
-```bash
-npm run dev
-```
+After `npm run build`, `npm run test:browser` launches headless Microsoft Edge,
+a Vite development server in guest mode, and the production preview. The media
+mock makes playback transitions and restored positions
+deterministic; it does not certify spoken wording. These tests cover catalogue
+ordering, Pride and Prejudice, multipart playback/seeking, legacy positions,
+alternate recordings, saved highlights/bookmarks, and service-worker text
+updates followed by offline reloads. Set another Playwright
+browser/channel in `playwright.config.ts` when Edge is unavailable.
 
-- The book appears in its genre on the library screen with a cover.
-- Opening it shows chapter text and the audio plays.
-- Chapter titles/durations look sane (compare against the LibriVox page).
-- `npm run build` still passes.
+## Word timing
 
-## Removing a book
+Chapter matching does not imply word-level alignment. LibriVox introductions,
+spoken headings, and transcription differences must be accounted for before
+assigning timestamp entry N to text token N. Use a forced aligner against the
+canonical text and include its text revision; do not use chapter-count equality
+as evidence that Whisper tokens match the text.
 
-Delete its entry from `CURATED`, its object in `src/data/books.generated.json`,
-and the `public/books/{slug}/` folder.
+## Remove a book
+
+Remove its manifest entry, source snapshot, generated metadata, and text folder.
+Consider existing saved progress/annotations before reusing a slug or recording
+index. Slugs and legacy storage indices identify existing readers' data.

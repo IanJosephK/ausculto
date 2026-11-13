@@ -58,7 +58,7 @@ export default function Bookmarks() {
                 >
                   <BookmarkIcon size={16} filled className="shrink-0 text-gold" />
                   <Link
-                    to={`/book/${book.slug}?chapter=${b.chapterIndex}`}
+                    to={`/book/${book.slug}?chapter=${b.chapterIndex}&v=${book.textRevision ?? ''}`}
                     className="min-w-0 flex-1 hover:text-gold-bright"
                   >
                     <p className="truncate text-sm font-medium">{chapter?.title ?? `Chapter ${b.chapterIndex + 1}`}</p>
@@ -94,7 +94,7 @@ export default function Bookmarks() {
                 <ul className="mt-2 space-y-3">
                   {items.map((h) => (
                     <li key={h.id} className="rounded-xl border border-edge bg-surface p-4">
-                      <Link to={`/book/${slug}?chapter=${h.chapterIndex}&hl=${h.id}`}>
+                      <Link to={h.unresolved ? `/book/${slug}` : `/book/${slug}?chapter=${h.chapterIndex}&hl=${h.id}&v=${book.textRevision ?? ''}`}>
                         <blockquote className="border-l-2 border-gold pl-3 font-body text-sm italic leading-relaxed hover:text-gold-bright">
                           “{h.text.length > 240 ? `${h.text.slice(0, 240).trimEnd()}…` : h.text}”
                         </blockquote>
@@ -133,7 +133,7 @@ export default function Bookmarks() {
 
                       <div className="mt-3 flex items-center gap-1 text-muted">
                         <span className="flex-1 text-xs">
-                          {getBook(slug)?.chapters[h.chapterIndex]?.title ?? `Chapter ${h.chapterIndex + 1}`}
+                          {h.unresolved ? 'Saved excerpt — location unavailable' : getBook(slug)?.chapters[h.chapterIndex]?.title ?? `Chapter ${h.chapterIndex + 1}`}
                         </span>
                         <button
                           onClick={() => setEditingNote({ id: h.id, draft: h.note ?? '' })}

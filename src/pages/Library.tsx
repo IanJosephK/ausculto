@@ -7,6 +7,7 @@ import { useStore } from '../store/useStore';
 import { useReaderCounts } from '../hooks/useReaderCounts';
 import { bookPercent } from '../hooks/useReadingProgress';
 import { formatDuration } from '../lib/format';
+import { fromStoredProgress } from '../lib/bookMapping';
 
 export default function Library() {
   const [genre, setGenre] = useState<Genre>('All');
@@ -60,7 +61,7 @@ export default function Library() {
                       {book.title}
                     </h3>
                     <p className="mt-0.5 truncate text-xs text-muted">
-                      Chapter {p.chapterIndex + 1} of {book.chapters.length}
+                      Chapter {(fromStoredProgress(book, p)?.chapterIndex ?? 0) + 1} of {book.chapters.length}
                     </p>
                     <div className="mt-auto">
                       <div

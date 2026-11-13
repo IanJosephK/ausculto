@@ -1,8 +1,19 @@
+export interface AudioPart {
+  id: string;
+  audioUrl: string;
+  duration: number;
+  /** Stable index used by existing guest/cloud progress and bookmarks. */
+  legacyIndex: number;
+}
+
 export interface Chapter {
   title: string;
   audioUrl: string;
   /** Seconds */
   duration: number;
+  id?: string;
+  audioParts?: AudioPart[];
+  textSections?: string[];
 }
 
 export interface Book {
@@ -13,13 +24,19 @@ export interface Book {
   genre: string;
   description: string;
   coverUrl?: string;
-  gutenbergId: number;
+  gutenbergId?: number;
   librivoxId: number;
   librivoxUrl?: string;
   /** Seconds, whole book */
   totalDuration: number;
   /** How chapter text was mapped to audio sections by the prep script */
   textMapping: string;
+  textRevision?: string;
+  textSource?: { url: string; sha256: string; credit?: string };
+  /** Structural match ordering, not a percentage of word-level accuracy. */
+  matchRank?: number;
+  /** Old recording indices -> current chapter and cumulative audio offset. */
+  legacyChapters?: { chapterIndex: number; offset: number; scale?: number }[];
   chapters: Chapter[];
 }
 
@@ -53,6 +70,10 @@ export interface Highlight {
   text: string;
   note: string | null;
   createdAt: number;
+  /** Retain saved excerpts/notes that cannot safely be located in a new edition. */
+  unresolved?: boolean;
+  /** Present for new local/session annotations; older cloud rows have no revision. */
+  textRevision?: string;
 }
 
 export interface Bookmark {

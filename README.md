@@ -39,6 +39,8 @@ and social features:
 | `npm test` | Run regression tests |
 | `npm run preview` | Serve the production build locally (service worker active) |
 | `npm run prepare-books` | Regenerate book data from LibriVox + Gutenberg |
+| `npm run check-books` | Verify generated text against pinned sources and mappings |
+| `npm run test:browser` | Edge browser regressions for ordering, playback, and saved state |
 | `npm run generate-alignments -- <slug> [n]` | Word-level sync data via Whisper |
 
 ## Deploying

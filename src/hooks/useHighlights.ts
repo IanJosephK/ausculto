@@ -1,8 +1,12 @@
-import { useCallback, useEffect, useState } from 'react';
+import { useCallback, useEffect, useMemo, useState } from 'react';
 import { supabase } from '../lib/supabase';
 import { useStore } from '../store/useStore';
 import { useAuth } from './useAuth';
 import type { Bookmark, Highlight } from '../data/types';
+import { getBook } from '../data/books';
+import { currentChapterIndex, storedChapterIndex } from '../lib/bookMapping';
+import { loadAllChapterTexts } from '../lib/textLoader';
+import { relocateHighlight } from '../lib/annotationMapping';
 
 /**
  * Bookmarks, highlights, and notes. Signed in → Supabase; guest → the
@@ -67,21 +71,53 @@ export function useAnnotations(bookSlug?: string) {
     if (user) void refresh();
   }, [user, refresh]);
 
-  const filterScope = <T extends { bookSlug: string }>(items: T[]) =>
-    bookSlug ? items.filter((i) => i.bookSlug === bookSlug) : items;
-
-  const highlights = user ? cloudHighlights : filterScope(localHighlights);
-  const bookmarks = user ? cloudBookmarks : filterScope(localBookmarks);
+  const storedHighlights = useMemo(() => {
+    const items = user ? cloudHighlights : localHighlights;
+    return bookSlug ? items.filter(h => h.bookSlug === bookSlug) : items;
+  }, [user, cloudHighlights, localHighlights, bookSlug]);
+  const storedBookmarks = useMemo(() => {
+    const items = user ? cloudBookmarks : localBookmarks;
+    return bookSlug ? items.filter(b => b.bookSlug === bookSlug) : items;
+  }, [user, cloudBookmarks, localBookmarks, bookSlug]);
+  const bookmarks = useMemo(() => storedBookmarks.map(b => {
+    const book = getBook(b.bookSlug);
+    return book ? { ...b, chapterIndex: currentChapterIndex(book, b.chapterIndex) } : b;
+  }), [storedBookmarks]);
+  const [relocated, setRelocated] = useState<{ input: Highlight[]; values: Highlight[] } | null>(null);
+  useEffect(() => {
+    let cancelled = false;
+    const slugs = [...new Set(storedHighlights.map(h => h.bookSlug))];
+    void Promise.all(slugs.map(async slug => {
+      const book = getBook(slug);
+      if (!book) return [slug, null] as const;
+      try {
+        const texts = await loadAllChapterTexts(book);
+        return [slug, texts.map(t => t.paragraphs.join('\n\n'))] as const;
+      } catch { return [slug, null] as const; }
+    })).then(entries => {
+      if (cancelled) return;
+      const plains = new Map(entries);
+      setRelocated({ input: storedHighlights, values: storedHighlights.map(h => {
+        const book = getBook(h.bookSlug);
+        const texts = plains.get(h.bookSlug);
+        return book && texts ? relocateHighlight(h, book, texts) : { ...h, unresolved: true };
+      }) });
+    });
+    return () => { cancelled = true; };
+  }, [storedHighlights]);
+  const highlights = relocated?.input === storedHighlights ? relocated.values : storedHighlights.map(h => ({ ...h, unresolved: true }));
 
   const addHighlight = useCallback(
     async (slug: string, chapterIndex: number, startOffset: number, endOffset: number, text: string) => {
+      const book = getBook(slug);
+      const storageIndex = book ? storedChapterIndex(book, chapterIndex) : chapterIndex;
       if (user && supabase) {
         const { data, error } = await supabase
           .from('highlights')
           .insert({
             user_id: user.id,
             book_slug: slug,
-            chapter_index: chapterIndex,
+            chapter_index: storageIndex,
             start_offset: startOffset,
             end_offset: endOffset,
             text_snippet: text,
@@ -92,7 +128,8 @@ export function useAnnotations(bookSlug?: string) {
         const created: Highlight = {
           id: data.id,
           bookSlug: slug,
-          chapterIndex,
+          chapterIndex: storageIndex,
+          textRevision: book?.textRevision,
           startOffset,
           endOffset,
           text,
@@ -105,7 +142,8 @@ export function useAnnotations(bookSlug?: string) {
       const created: Highlight = {
         id: crypto.randomUUID(),
         bookSlug: slug,
-        chapterIndex,
+        chapterIndex: storageIndex,
+        textRevision: book?.textRevision,
         startOffset,
         endOffset,
         text,
@@ -155,31 +193,33 @@ export function useAnnotations(bookSlug?: string) {
 
   const toggleBookmark = useCallback(
     async (slug: string, chapterIndex: number) => {
-      const existing = bookmarks.find((b) => b.bookSlug === slug && b.chapterIndex === chapterIndex);
+      const existing = bookmarks.filter((b) => b.bookSlug === slug && b.chapterIndex === chapterIndex);
+      const book = getBook(slug);
+      const storageIndex = book ? storedChapterIndex(book, chapterIndex) : chapterIndex;
       if (user && supabase) {
-        if (existing) {
-          await supabase.from('bookmarks').delete().eq('id', existing.id).eq('user_id', user.id);
-          setCloudBookmarks((prev) => prev.filter((b) => b.id !== existing.id));
+        if (existing.length) {
+          await supabase.from('bookmarks').delete().in('id', existing.map(b => b.id)).eq('user_id', user.id);
+          setCloudBookmarks((prev) => prev.filter((b) => !existing.some(e => e.id === b.id)));
         } else {
           const { data } = await supabase
             .from('bookmarks')
-            .insert({ user_id: user.id, book_slug: slug, chapter_index: chapterIndex })
+            .insert({ user_id: user.id, book_slug: slug, chapter_index: storageIndex })
             .select('id')
             .single();
           if (data) {
             setCloudBookmarks((prev) => [
               ...prev,
-              { id: data.id, bookSlug: slug, chapterIndex, createdAt: Date.now() },
+              { id: data.id, bookSlug: slug, chapterIndex: storageIndex, createdAt: Date.now() },
             ]);
           }
         }
-      } else if (existing) {
-        store.removeLocalBookmark(existing.id);
+      } else if (existing.length) {
+        existing.forEach(b => store.removeLocalBookmark(b.id));
       } else {
         store.addLocalBookmark({
           id: crypto.randomUUID(),
           bookSlug: slug,
-          chapterIndex,
+          chapterIndex: storageIndex,
           createdAt: Date.now(),
         });
       }
@@ -196,7 +236,7 @@ export function useAnnotations(bookSlug?: string) {
   return {
     highlights,
     bookmarks,
-    loading,
+    loading: loading || (storedHighlights.length > 0 && relocated?.input !== storedHighlights),
     addHighlight,
     removeHighlight,
     setNote,

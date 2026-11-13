@@ -51,7 +51,7 @@ export default defineConfig({
           },
           {
             // Chapter text JSON served from our own origin
-            urlPattern: /\/books\/.*\.json$/,
+            urlPattern: /\/books\/.*\.json(?:\?.*)?$/,
             handler: 'CacheFirst',
             options: {
               cacheName: 'ausculto-text',

@@ -2,6 +2,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { Link, Navigate, useParams, useSearchParams } from 'react-router-dom';
 import type { Book, ChapterText as ChapterTextData, WordTiming } from '../data/types';
 import { getBook } from '../data/books';
+import { currentChapterIndex } from '../lib/bookMapping';
 import { loadChapterText } from '../lib/textLoader';
 import { loadAlignment, findWordIndex } from '../lib/alignments';
 import { layoutChapter } from '../lib/text';
@@ -54,7 +55,8 @@ function ReaderInner({ book }: { book: Book }) {
   useEffect(() => {
     const chapterParam = searchParams.get('chapter');
     if (chapterParam === null) return;
-    const chapter = Number(chapterParam);
+    const supplied = Number(chapterParam);
+    const chapter = searchParams.get('v') === book.textRevision ? supplied : currentChapterIndex(book, supplied);
     const p = searchParams.get('p');
     const hlId = searchParams.get('hl') ?? undefined;
     if (Number.isInteger(chapter) && chapter >= 0 && chapter < book.chapters.length) {
@@ -113,7 +115,7 @@ function ReaderInner({ book }: { book: Book }) {
   const layout = useMemo(() => (chapterText ? layoutChapter(chapterText) : null), [chapterText]);
 
   const chapterHighlights = useMemo(
-    () => annotations.highlights.filter((h) => h.chapterIndex === player.chapterIndex),
+    () => annotations.highlights.filter((h) => !h.unresolved && h.chapterIndex === player.chapterIndex),
     [annotations.highlights, player.chapterIndex],
   );
 
@@ -139,6 +141,15 @@ function ReaderInner({ book }: { book: Book }) {
       const h = annotations.highlights.find((x) => x.id === pending.hlId);
       if (!h) {
         if (!annotations.loading) pendingScrollRef.current = null;
+        return;
+      }
+      if (h.unresolved) {
+        if (!annotations.loading) pendingScrollRef.current = null;
+        return;
+      }
+      if (h.chapterIndex !== player.chapterIndex) {
+        pending.chapter = h.chapterIndex;
+        player.setChapter(h.chapterIndex, { autoplay: false });
         return;
       }
       let para = 0;

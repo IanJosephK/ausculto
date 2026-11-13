@@ -1,4 +1,5 @@
 import type { Book } from '../data/types';
+import { audioParts, chapterTextUrl } from './bookMapping';
 
 /**
  * Offline caching uses the Workbox runtime caches in vite.config.ts. Chapter
@@ -13,10 +14,14 @@ export function isServiceWorkerActive(): boolean {
 
 /** Fire-and-forget warm-up of the next chapter's audio. */
 export function precacheChapterAudio(book: Book, chapterIndex: number): void {
-  if (!isServiceWorkerActive()) return; // dev / first visit: don't double-download
   const chapter = book.chapters[chapterIndex];
   if (!chapter) return;
-  fetch(chapter.audioUrl, { mode: 'cors' })
+  precacheAudio(audioParts(chapter)[0].audioUrl);
+}
+
+export function precacheAudio(url: string): void {
+  if (!isServiceWorkerActive()) return;
+  fetch(url, { mode: 'cors' })
     .then((res) => res.blob())
     .catch(() => {
       /* offline or CORS hiccup — playback will stream normally */
@@ -48,16 +53,16 @@ export async function downloadBookForOffline(
   for (let i = 0; i < book.chapters.length; i++) {
     try {
       // Text (same-origin, cached by the 'ausculto-text' runtime cache)
-      const textUrl = `/books/${book.slug}/${i}.json`;
+      const textUrl = chapterTextUrl(book, i);
       const textRes = await fetch(textUrl);
       if (textRes.status !== 200) throw new Error('Chapter text download failed');
       await textCache.put(textUrl, textRes);
       // Audio (cached by the 'ausculto-audio' runtime cache)
-      const res = await fetch(book.chapters[i].audioUrl, { mode: 'cors' });
-      if (res.status !== 200) throw new Error('Complete audio download failed');
-      // A successful fetch doesn't guarantee the SW's background cache write
-      // succeeded (for example, when storage is full). Await our own write.
-      await audioCache.put(book.chapters[i].audioUrl, res);
+      for (const part of audioParts(book.chapters[i])) {
+        const res = await fetch(part.audioUrl, { mode: 'cors' });
+        if (res.status !== 200) throw new Error('Complete audio download failed');
+        await audioCache.put(part.audioUrl, res);
+      }
     } catch {
       allOk = false;
     }
