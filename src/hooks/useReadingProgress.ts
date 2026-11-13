@@ -3,6 +3,7 @@ import { supabase } from '../lib/supabase';
 import { useStore } from '../store/useStore';
 import { useAuth } from './useAuth';
 import type { Book, BookProgress } from '../data/types';
+import { fromStoredProgress } from '../lib/bookMapping';
 
 const PUSH_DEBOUNCE_MS = 8000;
 
@@ -54,6 +55,7 @@ export function useProgressSync(): void {
 
 /** 0–100: how far through the whole book (by audio time) this progress is. */
 export function bookPercent(book: Book, progress: BookProgress | undefined): number {
+  progress = fromStoredProgress(book, progress);
   if (!progress || book.totalDuration === 0) return 0;
   let seconds = progress.position;
   for (let i = 0; i < progress.chapterIndex && i < book.chapters.length; i++) {

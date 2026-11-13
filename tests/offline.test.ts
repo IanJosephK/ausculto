@@ -23,7 +23,7 @@ function setup(t: TestContext, active = true) {
     },
     fetch: async (url: string) => {
       requests.push(url);
-      return new Response(url.endsWith('.json') ? '{"paragraphs":["Test"]}' : 'complete audio');
+      return new Response(url.includes('.json') ? '{"paragraphs":["Test"]}' : 'complete audio');
     },
   };
   for (const [key, value] of Object.entries(environment)) {
@@ -104,4 +104,20 @@ test('success waits for the audio cache write to finish', async (t) => {
   assert.equal(finished, false);
   release();
   assert.equal(await result, true);
+});
+
+test('revised text bypasses stale cache keys and every part of a split chapter is downloaded', async (t) => {
+  const { stored, progress } = setup(t);
+  const revised = {
+    ...book, textRevision: 'corrected-edition',
+    chapters: [{ ...book.chapters[0], audioParts: [
+      { id: 'a', legacyIndex: 0, audioUrl: 'https://archive.org/part1.mp3', duration: 10 },
+      { id: 'b', legacyIndex: 1, audioUrl: 'https://archive.org/part2.mp3', duration: 10 },
+    ] }],
+  };
+  assert.equal(await downloadBookForOffline(revised, (done, total) => progress.push([done, total])), true);
+  assert.ok(stored.has('ausculto-text:/books/test-book/0.json?v=corrected-edition'));
+  assert.ok(stored.has('ausculto-audio:https://archive.org/part1.mp3'));
+  assert.ok(stored.has('ausculto-audio:https://archive.org/part2.mp3'));
+  assert.deepEqual(progress, [[1, 1]]);
 });

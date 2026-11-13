@@ -114,9 +114,11 @@ export function ChapterList({
         })}
       </ol>
 
-      {book.textMapping !== 'exact' && (
+      {book.textSource && (
         <p className="border-t border-edge px-4 py-2.5 text-[11px] leading-snug text-muted">
-          Text is approximately aligned to this recording's chapters.
+          {book.textSource.credit && <span className="block">{book.textSource.credit}</span>}
+          <a href={book.textSource.url} target="_blank" rel="noreferrer" className="hover:text-gold">Text source</a>
+          {book.librivoxUrl && <> · <a href={book.librivoxUrl} target="_blank" rel="noreferrer" className="hover:text-gold">Recording</a></>}
         </p>
       )}
     </div>

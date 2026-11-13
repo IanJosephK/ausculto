@@ -1,12 +1,14 @@
 import type { Book, ChapterText } from '../data/types';
+import { getBook } from '../data/books';
+import { chapterTextUrl } from './bookMapping';
 
 const cache = new Map<string, Promise<ChapterText>>();
 
 export function loadChapterText(bookSlug: string, chapterIndex: number): Promise<ChapterText> {
-  const key = `${bookSlug}/${chapterIndex}`;
+  const key = chapterTextUrl(getBook(bookSlug) ?? { slug: bookSlug }, chapterIndex);
   let promise = cache.get(key);
   if (!promise) {
-    promise = fetch(`/books/${bookSlug}/${chapterIndex}.json`).then((res) => {
+    promise = fetch(key).then((res) => {
       if (!res.ok) throw new Error(`Failed to load chapter text (${res.status})`);
       return res.json() as Promise<ChapterText>;
     });

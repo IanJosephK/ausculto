@@ -6,6 +6,8 @@ dev-dist
 *.local
 .DS_Store
 scripts/.cache
+test-results/
+playwright-report/
 
 # .NET (Ausculto-BL)
 .vs/

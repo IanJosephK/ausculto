@@ -7,6 +7,8 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "test": "tsx --test tests/*.test.ts",
+    "test:browser": "playwright test",
+    "check-books": "tsx scripts/prepare-books.ts --check",
     "preview": "vite preview",
     "prepare-books": "tsx scripts/prepare-books.ts",
     "generate-alignments": "tsx scripts/generate-alignments.ts"
@@ -22,6 +24,7 @@
     "zustand": "^5.0.3"
   },
   "devDependencies": {
+    "@playwright/test": "^1.65.0",
     "@types/node": "^22.10.0",
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",

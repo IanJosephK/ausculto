@@ -1,6 +1,7 @@
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
 import type { Bookmark, BookProgress, Highlight } from '../data/types';
+import { getBook } from '../data/books';
 
 export type Theme = 'dark' | 'light';
 export type PlaybackSpeed = 0.75 | 1 | 1.25 | 1.5 | 2;
@@ -38,6 +39,7 @@ interface AppState {
 
   /** Books the user chose to download for offline listening */
   downloaded: string[];
+  downloadedRevisions: Record<string, string>;
   setDownloaded: (slug: string, downloaded: boolean) => void;
 
   /** Install-prompt bookkeeping: total listening seconds + dismissal */
@@ -105,17 +107,27 @@ export const useStore = create<AppState>()(
         })),
 
       downloaded: [],
+      downloadedRevisions: {},
       setDownloaded: (slug, downloaded) =>
         set((s) => ({
           downloaded: downloaded
             ? [...new Set([...s.downloaded, slug])]
             : s.downloaded.filter((d) => d !== slug),
+          downloadedRevisions: { ...s.downloadedRevisions, [slug]: downloaded ? getBook(slug)?.textRevision ?? 'legacy' : '' },
         })),
 
       totalListenSeconds: 0,
       installPromptDismissed: false,
       dismissInstallPrompt: () => set({ installPromptDismissed: true }),
     }),
-    { name: 'ausculto' },
+    {
+      name: 'ausculto',
+      merge: (persisted, current) => {
+        const state = { ...current, ...(persisted as Partial<AppState>) };
+        state.downloaded = state.downloaded.filter(slug =>
+          state.downloadedRevisions[slug] === (getBook(slug)?.textRevision ?? 'legacy'));
+        return state;
+      },
+    },
   ),
 );
