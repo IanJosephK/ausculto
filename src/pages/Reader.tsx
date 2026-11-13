@@ -4,7 +4,8 @@ import type { Book, ChapterText as ChapterTextData, WordTiming } from '../data/t
 import { getBook } from '../data/books';
 import { currentChapterIndex } from '../lib/bookMapping';
 import { loadChapterText } from '../lib/textLoader';
-import { loadAlignment, findWordIndex } from '../lib/alignments';
+import { loadAlignment } from '../lib/alignments';
+import { findWordIndex } from '../lib/readAlong';
 import { layoutChapter } from '../lib/text';
 import { useAudioPlayer } from '../hooks/useAudioPlayer';
 import { useAnnotations } from '../hooks/useHighlights';
@@ -73,9 +74,14 @@ function ReaderInner({ book }: { book: Book }) {
     setTextLoading(true);
     setTextError(null);
     setPopover(null);
+    setAlignment(null);
     loadChapterText(book.slug, player.chapterIndex)
-      .then((text) => {
-        if (!cancelled) setChapterText(text);
+      .then(async (text) => {
+        if (cancelled) return;
+        setChapterText(text);
+        setTextLoading(false);
+        const words = await loadAlignment(book, player.chapterIndex, text);
+        if (!cancelled) setAlignment(words);
       })
       .catch(() => {
         if (!cancelled) {
@@ -90,18 +96,6 @@ function ReaderInner({ book }: { book: Book }) {
       cancelled = true;
     };
   }, [book.slug, player.chapterIndex, retryToken]);
-
-  // Load word alignment (null → graceful chapter-level fallback)
-  useEffect(() => {
-    let cancelled = false;
-    setAlignment(null);
-    void loadAlignment(book.slug, player.chapterIndex).then((words) => {
-      if (!cancelled) setAlignment(words);
-    });
-    return () => {
-      cancelled = true;
-    };
-  }, [book.slug, player.chapterIndex]);
 
   // Chapter-level sync: a fresh chapter starts at the top
   const prevChapterRef = useRef(player.chapterIndex);
@@ -126,10 +120,12 @@ function ReaderInner({ book }: { book: Book }) {
     }
     const wordIdx = findWordIndex(alignment, player.currentTime);
     if (wordIdx < 0) return { activeRange: null, activeParagraph: null };
-    const tokenIdx = Math.min(wordIdx, layout.tokens.length - 1);
+    const word = alignment[wordIdx];
+    let paragraph = 0;
+    while (paragraph + 1 < layout.paragraphStarts.length && layout.paragraphStarts[paragraph + 1] <= word.startOffset) paragraph++;
     return {
-      activeRange: layout.tokens[tokenIdx],
-      activeParagraph: layout.tokenParagraph[tokenIdx],
+      activeRange: { start: word.startOffset, end: word.endOffset },
+      activeParagraph: paragraph,
     };
   }, [alignment, layout, player.currentTime, player.isPlaying]);
 

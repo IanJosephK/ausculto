@@ -52,12 +52,30 @@ export interface ChapterText {
   italics?: [number, number][][];
 }
 
-/** One aligned word from src/data/alignments/{slug}/{index}.json */
+/** One aligned word from a versioned /alignments/{slug}/ chapter asset. */
 export interface WordTiming {
   word: string;
   /** Seconds into the chapter audio */
   start: number;
   end: number;
+  /** UTF-16 offsets in the displayed paragraphs joined with two newlines. */
+  startOffset: number;
+  endOffset: number;
+}
+
+export interface ChapterAlignment {
+  version: 1;
+  textRevision: string;
+  chapterId: string;
+  audioUrls: string[];
+  model: string;
+  coverage: number;
+  words: WordTiming[];
+}
+
+export interface ReadAlongBook {
+  textRevision: string;
+  chapters: { id: string; audioUrls: string[]; url: string; coverage: number }[];
 }
 
 export interface Highlight {

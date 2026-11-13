@@ -1,8 +1,8 @@
 import type { ChapterText } from '../data/types';
 
 /**
- * Character layout of a chapter. All highlight offsets and word-alignment
- * token indices are relative to `plain` — the paragraphs joined with "\n\n".
+ * Character layout of a chapter. Highlight and read-along offsets are relative
+ * to `plain` — the paragraphs joined with "\n\n".
  */
 export interface ChapterLayout {
   plain: string;

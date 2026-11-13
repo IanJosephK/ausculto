@@ -187,6 +187,24 @@ export function useAudioPlayer(book: Book): AudioPlayer {
     };
   }, [book, flushActivity, markCompleted, play, save]);
 
+  // Native timeupdate can arrive only four times a second. Refresh the visible
+  // position more often while playing so short words highlight on time.
+  useEffect(() => {
+    if (!isPlaying) return;
+    const audio = getAudio();
+    let frame = 0;
+    let lastFrame = 0;
+    const update = (now: number) => {
+      if (now - lastFrame >= 50 && !audio.paused && audio.readyState > 0) {
+        lastFrame = now;
+        setCurrentTime(playbackRef.current.offset + audio.currentTime);
+      }
+      frame = requestAnimationFrame(update);
+    };
+    frame = requestAnimationFrame(update);
+    return () => cancelAnimationFrame(frame);
+  }, [isPlaying]);
+
   const select = useCallback((index: number, time: number, autoplay: boolean) => {
     const located = locateAudioPart(book.chapters[index], time);
     const current = playbackRef.current;

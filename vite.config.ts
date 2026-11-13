@@ -29,8 +29,8 @@ export default defineConfig({
         ],
       },
       workbox: {
-        // Book text and alignments are cached at runtime, not precached —
-        // precaching every chapter of 18 books would balloon the install.
+        // Book text and word timings load on demand; precaching the whole
+        // catalogue would balloon the initial install.
         globPatterns: ['**/*.{js,css,html,svg,woff2}'],
         globIgnores: ['books/**', 'alignments/**'],
         navigateFallback: '/index.html',
@@ -56,6 +56,15 @@ export default defineConfig({
             options: {
               cacheName: 'ausculto-text',
               expiration: { maxEntries: 2000, maxAgeSeconds: 60 * 60 * 24 * 365 },
+            },
+          },
+          {
+            urlPattern: /\/alignments\/.*\.json$/,
+            handler: 'CacheFirst',
+            options: {
+              cacheName: 'ausculto-alignments',
+              expiration: { maxEntries: 500, maxAgeSeconds: 60 * 60 * 24 * 365 },
+              cacheableResponse: { statuses: [200] },
             },
           },
           {
@@ -92,7 +101,13 @@ export default defineConfig({
       },
     }),
   ],
-  server: { port: 5173, strictPort: true },
+  server: {
+    port: 5173,
+    strictPort: true,
+    // Local speech models and Python environments are generation inputs, not
+    // application source. Watching them can overwhelm the dev server.
+    watch: { ignored: ['**/scripts/.cache/**'] },
+  },
   build: {
     rollupOptions: {
       output: {

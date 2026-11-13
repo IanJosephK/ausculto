@@ -1,5 +1,6 @@
-import type { Book } from '../data/types';
+import type { Book, ChapterText } from '../data/types';
 import { audioParts, chapterTextUrl } from './bookMapping';
+import { alignmentUrl, validateAlignment } from './readAlong';
 
 /**
  * Offline caching uses the Workbox runtime caches in vite.config.ts. Chapter
@@ -39,10 +40,12 @@ export async function downloadBookForOffline(
   if (!isServiceWorkerActive() || !('caches' in globalThis)) return false;
   let textCache: Cache;
   let audioCache: Cache;
+  let timingCache: Cache;
   try {
-    [textCache, audioCache] = await Promise.all([
+    [textCache, audioCache, timingCache] = await Promise.all([
       caches.open('ausculto-text'),
       caches.open('ausculto-audio'),
+      caches.open('ausculto-alignments'),
     ]);
   } catch {
     return false;
@@ -56,6 +59,16 @@ export async function downloadBookForOffline(
       const textUrl = chapterTextUrl(book, i);
       const textRes = await fetch(textUrl);
       if (textRes.status !== 200) throw new Error('Chapter text download failed');
+      const timingUrl = alignmentUrl(book, i);
+      if (timingUrl) {
+        const timingRes = await fetch(timingUrl);
+        if (timingRes.status !== 200) throw new Error('Read-along download failed');
+        const text = await textRes.clone().json() as ChapterText;
+        const timing: unknown = await timingRes.clone().json();
+        if (!validateAlignment(timing, book, i, text.paragraphs.join('\n\n')))
+          throw new Error('Read-along data does not match the downloaded text');
+        await timingCache.put(timingUrl, timingRes);
+      }
       await textCache.put(textUrl, textRes);
       // Audio (cached by the 'ausculto-audio' runtime cache)
       for (const part of audioParts(book.chapters[i])) {

@@ -105,6 +105,7 @@ export function ChapterText({
   const containerRef = useRef<HTMLDivElement>(null);
   const paraRefs = useRef(new Map<number, HTMLParagraphElement>());
   const lastUserScrollRef = useRef(0);
+  const lastFollowedParagraphRef = useRef<number | null>(null);
   const [flashPara, setFlashPara] = useState<number | null>(null);
 
   const registerRef = useCallback((idx: number, el: HTMLParagraphElement | null) => {
@@ -144,9 +145,11 @@ export function ChapterText({
   }, []);
 
   // Keep the spoken word in view
+  useEffect(() => { lastFollowedParagraphRef.current = null; }, [text]);
   useEffect(() => {
-    if (activeParagraph === null) return;
+    if (activeParagraph === null || activeParagraph === lastFollowedParagraphRef.current) return;
     if (Date.now() - lastUserScrollRef.current < 4000) return;
+    lastFollowedParagraphRef.current = activeParagraph;
     paraRefs.current.get(activeParagraph)?.scrollIntoView({ block: 'center', behavior: 'smooth' });
   }, [activeParagraph]);
 

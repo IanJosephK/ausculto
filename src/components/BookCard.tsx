@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import type { Book } from '../data/types';
 import { formatDuration } from '../lib/format';
+import { ReadAlongBadge } from './ReadAlongBadge';
 
 interface BookCardProps {
   book: Book;
@@ -64,6 +65,7 @@ export function BookCard({ book, progressPercent = 0, readers = 0 }: BookCardPro
           {formatDuration(book.totalDuration)}
           {progressPercent > 0 && <span className="text-gold"> · {progressPercent}%</span>}
         </p>
+        <ReadAlongBadge book={book} />
       </div>
     </Link>
   );

@@ -6,6 +6,7 @@ dev-dist
 *.local
 .DS_Store
 scripts/.cache
+__pycache__/
 test-results/
 playwright-report/
 

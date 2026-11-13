@@ -8,6 +8,7 @@ import { useReaderCounts } from '../hooks/useReaderCounts';
 import { bookPercent } from '../hooks/useReadingProgress';
 import { formatDuration } from '../lib/format';
 import { fromStoredProgress } from '../lib/bookMapping';
+import { ReadAlongBadge } from '../components/ReadAlongBadge';
 
 export default function Library() {
   const [genre, setGenre] = useState<Genre>('All');
@@ -63,6 +64,7 @@ export default function Library() {
                     <p className="mt-0.5 truncate text-xs text-muted">
                       Chapter {(fromStoredProgress(book, p)?.chapterIndex ?? 0) + 1} of {book.chapters.length}
                     </p>
+                    <ReadAlongBadge book={book} />
                     <div className="mt-auto">
                       <div
                         className="h-1.5 w-full overflow-hidden rounded-full bg-surface2"

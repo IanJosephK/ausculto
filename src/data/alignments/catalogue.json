@@ -1,0 +1,92 @@
+{
+  "the-art-of-war": {
+    "textRevision": "f89d5e2064650e45",
+    "chapters": [
+      {
+        "id": "the-art-of-war-I",
+        "audioUrls": [
+          "https://archive.org/download/art_of_war_librivox/art_of_war_01-02_sun_tzu_64kb.mp3"
+        ],
+        "url": "/alignments/the-art-of-war/0.9d4c48f46fbf.json",
+        "coverage": 0.9631
+      },
+      {
+        "id": "the-art-of-war-III",
+        "audioUrls": [
+          "https://archive.org/download/art_of_war_librivox/art_of_war_03-04_sun_tzu_64kb.mp3"
+        ],
+        "url": "/alignments/the-art-of-war/1.d7060805443f.json",
+        "coverage": 0.964
+      },
+      {
+        "id": "the-art-of-war-V",
+        "audioUrls": [
+          "https://archive.org/download/art_of_war_librivox/art_of_war_05-06_sun_tzu_64kb.mp3"
+        ],
+        "url": "/alignments/the-art-of-war/2.7943fc8347b8.json",
+        "coverage": 0.9753
+      },
+      {
+        "id": "the-art-of-war-VII",
+        "audioUrls": [
+          "https://archive.org/download/art_of_war_librivox/art_of_war_07-08_sun_tzu_64kb.mp3"
+        ],
+        "url": "/alignments/the-art-of-war/3.9c6f0274b0b3.json",
+        "coverage": 0.9588
+      },
+      {
+        "id": "the-art-of-war-IX",
+        "audioUrls": [
+          "https://archive.org/download/art_of_war_librivox/art_of_war_09-10_sun_tzu_64kb.mp3"
+        ],
+        "url": "/alignments/the-art-of-war/4.6a7271997a6f.json",
+        "coverage": 0.9772
+      },
+      {
+        "id": "the-art-of-war-XI",
+        "audioUrls": [
+          "https://archive.org/download/art_of_war_librivox/art_of_war_11_sun_tzu_64kb.mp3"
+        ],
+        "url": "/alignments/the-art-of-war/5.81fdb525769e.json",
+        "coverage": 0.971
+      },
+      {
+        "id": "the-art-of-war-XII",
+        "audioUrls": [
+          "https://archive.org/download/art_of_war_librivox/art_of_war_12-13_sun_tzu_64kb.mp3"
+        ],
+        "url": "/alignments/the-art-of-war/6.488a33fae6ad.json",
+        "coverage": 0.9678
+      }
+    ]
+  },
+  "metamorphosis": {
+    "textRevision": "a2809bae54217e67",
+    "chapters": [
+      {
+        "id": "metamorphosis-I",
+        "audioUrls": [
+          "https://archive.org/download/metamorphosis_librivox/metamorphosis_1_kafka_64kb.mp3"
+        ],
+        "url": "/alignments/metamorphosis/0.192da81234f5.json",
+        "coverage": 0.9873
+      },
+      {
+        "id": "metamorphosis-II",
+        "audioUrls": [
+          "https://archive.org/download/metamorphosis_librivox/metamorphosis_2_kafka_64kb.mp3"
+        ],
+        "url": "/alignments/metamorphosis/1.58a58753c65b.json",
+        "coverage": 0.9891
+      },
+      {
+        "id": "metamorphosis-III",
+        "audioUrls": [
+          "https://archive.org/download/metamorphosis_librivox/metamorphosis_3_kafka_64kb.mp3"
+        ],
+        "url": "/alignments/metamorphosis/2.5b40f8e8f1a6.json",
+        "coverage": 0.985
+      }
+    ]
+  }
+}
