@@ -80,16 +80,12 @@ export default function Profile() {
       </section>
 
       {/* Account */}
-      <section aria-label="Account" className="mt-6 rounded-xl border border-edge bg-surface p-5">
+      <section aria-label={isSupabaseConfigured ? 'Account' : 'Saved on this device'} className="mt-6 rounded-xl border border-edge bg-surface p-5">
         {!isSupabaseConfigured ? (
           <>
-            <h2 className="text-sm font-semibold">Account</h2>
+            <h2 className="text-sm font-semibold">Saved on this device</h2>
             <p className="mt-2 text-sm leading-relaxed text-muted">
-              Everything you do is saved on this device. To enable sign-in, cloud sync, and social
-              features, add <code className="rounded bg-page px-1 py-0.5 text-xs">VITE_SUPABASE_URL</code> and{' '}
-              <code className="rounded bg-page px-1 py-0.5 text-xs">VITE_SUPABASE_ANON_KEY</code> to a{' '}
-              <code className="rounded bg-page px-1 py-0.5 text-xs">.env</code> file and run the migrations
-              in <code className="rounded bg-page px-1 py-0.5 text-xs">supabase/migrations/</code>.
+              Your progress, bookmarks, highlights, and notes are saved in this browser.
             </p>
           </>
         ) : loading ? (

@@ -8,6 +8,10 @@ full text, so you can follow along as you listen. 19 classic books, offline
 support, highlights & notes, and lightweight social features. Works fully
 without an account.
 
+Selected titles offer **Read-along synced** word highlighting. Look for the
+tag beneath a book's details. Timing data downloads with the book for offline
+use. See [the alignment guide](src/data/alignments/README.md) to add a title.
+
 ## Quick start
 
 ```bash
@@ -41,7 +45,7 @@ and social features:
 | `npm run prepare-books` | Regenerate book data from LibriVox + Gutenberg |
 | `npm run check-books` | Verify generated text against pinned sources and mappings |
 | `npm run test:browser` | Edge browser regressions for ordering, playback, and saved state |
-| `npm run generate-alignments -- <slug> [n]` | Word-level sync data via Whisper |
+| `npm run generate-alignments -- <slug> [n]` | Force-align the displayed text to its recording |
 
 ## Deploying
 

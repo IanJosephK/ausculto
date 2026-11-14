@@ -4,6 +4,7 @@ import { formatDuration } from '../lib/format';
 import { downloadBookForOffline } from '../lib/offline';
 import { useStore } from '../store/useStore';
 import { BookmarkIcon, CheckIcon, DownloadIcon, SpinnerIcon } from './icons';
+import { ReadAlongBadge } from './ReadAlongBadge';
 
 interface ChapterListProps {
   book: Book;
@@ -38,7 +39,10 @@ export function ChapterList({
   return (
     <div className="flex h-full flex-col">
       <div className="flex items-center justify-between gap-2 border-b border-edge px-4 py-3">
-        <h2 className="font-display text-base font-semibold">Chapters</h2>
+        <div>
+          <h2 className="font-display text-base font-semibold">Chapters</h2>
+          <ReadAlongBadge book={book} />
+        </div>
         <button
           onClick={() => void startDownload()}
           disabled={!!downloading || downloaded}

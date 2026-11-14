@@ -1,0 +1,2 @@
+# Timing asset names hash their exact bytes; preserve them across platforms.
+public/alignments/**/*.json text eol=lf linguist-generated=true
